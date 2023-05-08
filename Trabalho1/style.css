@@ -1,657 +1,894 @@
+
 /*Estilo Header*/
 * {
-  margin: 0;
-  padding: 0;
-  font-family:sans-serif;
-}
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+  }
 
-
-body{
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color:#363636;
+  
+  body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:#363636;
 }
 
 /*Header ----------------------------------------------------------*/ 
 header nav {
-  background-color: #141D23;
-  padding: 10px 20px;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 18px;
-}
-
-.nome-cinema{
-  font-family: sans-serif;
-  font-size: 20px;
-  margin-bottom: 10px;
-  margin-top: 9px;
-  color: white;
-}
-
-.descricao-cinema{
-  display: flex;
-  font-family: sans-serif;
-  font-size: 15px;
-  color: white;
-
-}
-
-.input-search {
-  background-color: #141D23;
-  color: white;
-  display: flex;
-  margin: 0;
-  border: 0;
-  outline: 0;
-  font-size: 15px;
-  width: 150px;
-  padding: 0;
-  overflow: hidden;
-  font-size: 18px;
-  margin-right: 10px;
-}
-
-.input-search::placeholder {
-  color: white;
-}
-
-
-
-@media(max-width:900px) {
-
-  .imagem-inicial{
-    text-align: center;
-    }
-
-    .text1{
-  display: flex;
-  margin-top: 30px;
-  font-size: 12px;
-  color: white;
-}
-
-  .nav,
-  .set-search {
-    display: none;
-  }
-
-  .img-menor {
-    display: none;
-  }
-
-  .img-maior {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-
-  }
-
-   /*Menu Lateral */
-  .container {
-    max-width: 1050px;
-    width: 90%;
-    margin: auto;
-  }
-
-  .menu-search{
-    background-color: #141D23 ;
-    color: white;
-    display: flex;
-    border: 0;
-    outline: 0;
-    font-size: 12px;
-    width: 120px;
-}
-
-  .navbar {
-    width: 100%;
-  }
-
-  .nav-container {
-    display: flex;
+    background-color: #141D23;
+    padding: 10px 20px;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    font-size: 18px;
   }
 
-  .navbar .menu-items {
-    display: flex;
-  }
-
-  .navbar .nav-container li {
-    list-style: none;
-  }
-
-  .navbar .nav-container input.menu-search {
-    text-decoration: none;
+  .nome-cinema{
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 9px;
     color: white;
-    padding: 0.7rem;
-    width: 50%;
   }
 
-  .navbar .nav-container a {
-    text-decoration: none;
+  .descricao-cinema{
+    display: flex;
+    font-family: sans-serif;
+    font-size: 15px;
     color: white;
-    font-weight: 500;
-    font-size: 1.1rem;
-    padding: 0.7rem;
-  }
 
-  .navbar .nav-container a:hover {
-    font-weight: bolder;
   }
-
-  .nav-container {
-    display: block;
-    position: relative;
-    height: 60px;
-  }
-
-  .nav-container .checkbox {
-    position: absolute;
-    display: block;
-    height: 32px;
-    width: 32px;
-    top: 20px;
-    left: 20px;
-    z-index: 5;
-    opacity: 0;
-    cursor: pointer;
-  }
-
-  .nav-container .Cinema-lines {
-    display: block;
-    height: 26px;
-    width: 32px;
-    position: absolute;
-    top: 17px;
-    left: 20px;
-    z-index: 2;
+  
+  .input-search {
+    background-color: #141D23;
+    color: white;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font-size: 15px;
+    width: 150px;
+    padding: 0;
+    overflow: hidden;
+    font-size: 18px;
+    margin-right: 10px;
   }
 
-  .nav-container .Cinema-lines .line {
-    display: block;
-    height: 4px;
-    width: 100%;
-    border-radius: 10px;
-    background: white;
+  .input-search::placeholder {
+    color: white;
   }
 
-  .nav-container .Cinema-lines .line1 {
-    transform-origin: 0% 0%;
-    transition: transform 0.4s ease-in-out;
-  }
 
-  .nav-container .Cinema-lines .line2 {
-    transition: transform 0.2s ease-in-out;
-  }
 
-  .nav-container .Cinema-lines .line3 {
-    transform-origin: 0% 100%;
-    transition: transform 0.4s ease-in-out;
-  }
+  @media(max-width:900px) {
 
-  .navbar .menu-items {
-    padding-top: 100px;
-    background-color: #202C33;
-    height: 65vh;
-    width: 50%;
-    transform: translate(-150%);
+    .imagem-inicial{
+      text-align: center;
+      }
+
+      .text1{
     display: flex;
-    flex-direction: column;
-    margin-left: -35px;
-    padding-left: 20px;
-    transition: transform 0.5s ease-in-out;
-    border-radius: 10px;
+    margin-top: 30px;
+    font-size: 12px;
+    color: white;
   }
-
-  .navbar .menu-items li {
-    margin-bottom: 1.2rem;
-    font-size: 1.5rem;
-    font-weight: 500;
-  }
-
-  .nav-container input[type="checkbox"]:checked~.menu-items {
-    transform: translateX(0);
-  }
-
-  .nav-container input[type="checkbox"]:checked~.Cinema-lines .line1 {
-    transform: rotate(45deg);
-  }
-
-  .nav-container input[type="checkbox"]:checked~.Cinema-lines .line2 {
-    transform: scaleY(0);
-  }
-
-  .nav-container input[type="checkbox"]:checked~.Cinema-lines .line3 {
-    transform: rotate(-45deg);
-  }
-}
-
-
-@media(min-width: 901px) and (max-width: 1051px) {
-
-  .imagem-inicial{
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .text1{
-      display: flex;
-      margin-top: 30px;
-      font-size: 12px;
-      color: white;
-    }
-
-  .navbar {
+  
+    .nav,
+    .set-search {
       display: none;
     }
   
+    .img-menor {
+      display: none;
+    }
+  
+    .img-maior {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+  
+    }
 
-  .img-maior {
-    display: none;
+     /*Menu Lateral */
+    .container {
+      max-width: 1050px;
+      width: 90%;
+      margin: auto;
+    }
+  
+    .menu-search{
+      background-color: #141D23 ;
+      color: white;
+      display: flex;
+      border: 0;
+      outline: 0;
+      font-size: 12px;
+      width: 120px;
   }
-
-  header nav {
-    background-color: #141D23;
-    height: 5rem;
-    display: flex;
-    justify-content: space-between;
-
-  }
-
-  header nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-    position: relative;
-    color: white;
-    font-family: sans-serif;
-    font-size: 12px;
-  }
-
-  header a {
-    text-decoration: none;
-    color: white;
-  }
-
-  header .set-logo {
-    display: flex;
-    margin-right: 30px;
-  }
-
-  header .set-search {
-    display: flex;
-    border: solid #141D23;
-    margin-left: 30px;
-  }
-
-  header .input-search {
-    background-color: #141D23;
-    color: white;
-    display: flex;
-    border: 0;
-    outline: 0;
-    font-size: 12px;
-    width: 120px;
-  }
-
-  header .input-search::placeholder {
-    color: white;
-  }
-}
-
-
-@media(min-width:1052px) and (max-width: 1500px) {
-
-  .imagem-inicial{
+  
+    .navbar {
       width: 100%;
+    }
+  
+    .nav-container {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
+      height: 60px;
     }
-
-    .text1{
+  
+    .navbar .menu-items {
       display: flex;
-      margin-top: 30px;
-      font-size: 12px;
-      color: white;
     }
-
-  .navbar {
-    display: none;
-  }
-
-  .img-maior {
-    display: none;
-  }
-
-  header nav {
-    background-color: #141D23;
-    height: 5rem;
-    display: flex;
-    justify-content: space-between;
-
-  }
-
-  header nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-    position: relative;
-    color: white;
-    font-family:sans-serif;
-    font-size: 16px;
-  }
-
-  header a {
-    text-decoration: none;
-    color: white;
-  }
-
-  header .set-logo {
-    display: flex;
-    margin-right: 30px;
-  }
-
-  header .set-search {
-    display: flex;
-    border: solid #141D23;
-    margin-right: 30px;
-  }
-
-  header .input-search {
-    background-color: #141D23;
-    color: white;
-    display: flex;
-    border: 0;
-    outline: 0;
-    font-size: 16px;
-    width: 127px;
-  }
-
-  header .input-search::placeholder {
-    color: white;
-  }
-}
-
-
-@media(min-width: 1501px) and (max-width: 2045px) {
-
-  .imagem-inicial{
+  
+    .navbar .nav-container li {
+      list-style: none;
+    }
+  
+    .navbar .nav-container input.menu-search {
+      text-decoration: none;
+      color: white;
+      padding: 0.7rem;
+      width: 50%;
+    }
+  
+    .navbar .nav-container a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      font-size: 1.1rem;
+      padding: 0.7rem;
+    }
+  
+    .navbar .nav-container a:hover {
+      font-weight: bolder;
+    }
+  
+    .nav-container {
+      display: block;
+      position: relative;
+      height: 60px;
+    }
+  
+    .nav-container .checkbox {
+      position: absolute;
+      display: block;
+      height: 32px;
+      width: 32px;
+      top: 20px;
+      left: 20px;
+      z-index: 5;
+      opacity: 0;
+      cursor: pointer;
+    }
+  
+    .nav-container .Cinema-lines {
+      display: block;
+      height: 26px;
+      width: 32px;
+      position: absolute;
+      top: 17px;
+      left: 20px;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .nav-container .Cinema-lines .line {
+      display: block;
+      height: 4px;
       width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      border-radius: 10px;
+      background: white;
     }
-
-    .text1{
+  
+    .nav-container .Cinema-lines .line1 {
+      transform-origin: 0% 0%;
+      transition: transform 0.4s ease-in-out;
+    }
+  
+    .nav-container .Cinema-lines .line2 {
+      transition: transform 0.2s ease-in-out;
+    }
+  
+    .nav-container .Cinema-lines .line3 {
+      transform-origin: 0% 100%;
+      transition: transform 0.4s ease-in-out;
+    }
+  
+    .navbar .menu-items {
+      padding-top: 100px;
+      background-color: #202C33;
+      height: 65vh;
+      width: 50%;
+      transform: translate(-150%);
       display: flex;
-      margin-top: 50px;
+      flex-direction: column;
+      margin-left: -35px;
+      padding-left: 20px;
+      transition: transform 0.5s ease-in-out;
+      border-radius: 10px;
+    }
+  
+    .navbar .menu-items li {
+      margin-bottom: 1.2rem;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  
+    .nav-container input[type="checkbox"]:checked~.menu-items {
+      transform: translateX(0);
+    }
+  
+    .nav-container input[type="checkbox"]:checked~.Cinema-lines .line1 {
+      transform: rotate(45deg);
+    }
+  
+    .nav-container input[type="checkbox"]:checked~.Cinema-lines .line2 {
+      transform: scaleY(0);
+    }
+  
+    .nav-container input[type="checkbox"]:checked~.Cinema-lines .line3 {
+      transform: rotate(-45deg);
+    }
+  }
+
+  
+  @media(min-width: 901px) and (max-width: 1051px) {
+
+    .imagem-inicial{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .text1{
+        display: flex;
+        margin-top: 30px;
+        font-size: 12px;
+        color: white;
+      }
+  
+    .navbar {
+        display: none;
+      }
+    
+  
+    .img-maior {
+      display: none;
+    }
+  
+    header nav {
+      background-color: #141D23;
+      height: 5rem;
+      display: flex;
+      justify-content: space-between;
+  
+    }
+  
+    header nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1em;
+      position: relative;
+      color: white;
+      font-family: sans-serif;
       font-size: 12px;
+    }
+  
+    header a {
+      text-decoration: none;
       color: white;
     }
-
-  .navbar {
-    display: none;
-  }
-
-  .img-maior {
-    display: none;
-  }
-
-  header nav {
-    background-color: #141D23;
-    height: 5rem;
-    display: flex;
-    justify-content: space-between;
-
-  }
-
-  header nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-    position: relative;
-    color: white;
-    font-family: sans-serif;
-    font-size: 22px;
-  }
-
-  header a {
-    text-decoration: none;
-    color: white;
-  }
-
-  header .set-logo {
-    display: flex;
-    margin-right: 30px;
-  }
-
-  header .set-search {
-    display: flex;
-    border: solid #141D23;
-    margin-right: 30px;
-  }
-
-  header .input-search {
-    background-color: #141D23;
-    color: white;
-    display: flex;
-    border: 0;
-    outline: 0;
-    font-size: 18px;
-    width: 142px;
-  }
-
-  header .input-search::placeholder {
-    color: white;
-  }
-}
-
-@media(min-width: 2046px) {
-
-  .imagem-inicial{
+  
+    header .set-logo {
       display: flex;
-      justify-content: center;
-      align-items: center;
+      margin-right: 30px;
     }
-
-    .text1{
+  
+    header .set-search {
       display: flex;
-      margin-top: 50px;
+      border: solid #141D23;
+      margin-left: 30px;
+    }
+  
+    header .input-search {
+      background-color: #141D23;
+      color: white;
+      display: flex;
+      border: 0;
+      outline: 0;
       font-size: 12px;
+      width: 120px;
+    }
+  
+    header .input-search::placeholder {
       color: white;
     }
+  }
+  
 
-  .navbar {
-    display: none;
+  @media(min-width:1052px) and (max-width: 1500px) {
+
+    .imagem-inicial{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .text1{
+        display: flex;
+        margin-top: 30px;
+        font-size: 12px;
+        color: white;
+      }
+  
+    .navbar {
+      display: none;
+    }
+  
+    .img-maior {
+      display: none;
+    }
+  
+    header nav {
+      background-color: #141D23;
+      height: 5rem;
+      display: flex;
+      justify-content: space-between;
+  
+    }
+  
+    header nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1em;
+      position: relative;
+      color: white;
+      font-family:sans-serif;
+      font-size: 16px;
+    }
+  
+    header a {
+      text-decoration: none;
+      color: white;
+    }
+  
+    header .set-logo {
+      display: flex;
+      margin-right: 30px;
+    }
+  
+    header .set-search {
+      display: flex;
+      border: solid #141D23;
+      margin-right: 30px;
+    }
+  
+    header .input-search {
+      background-color: #141D23;
+      color: white;
+      display: flex;
+      border: 0;
+      outline: 0;
+      font-size: 16px;
+      width: 127px;
+    }
+  
+    header .input-search::placeholder {
+      color: white;
+    }
+  }
+  
+
+  @media(min-width: 1501px) and (max-width: 2045px) {
+
+    .imagem-inicial{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .text1{
+        display: flex;
+        margin-top: 50px;
+        font-size: 12px;
+        color: white;
+      }
+  
+    .navbar {
+      display: none;
+    }
+  
+    .img-maior {
+      display: none;
+    }
+  
+    header nav {
+      background-color: #141D23;
+      height: 5rem;
+      display: flex;
+      justify-content: space-between;
+  
+    }
+  
+    header nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1em;
+      position: relative;
+      color: white;
+      font-family: sans-serif;
+      font-size: 22px;
+    }
+  
+    header a {
+      text-decoration: none;
+      color: white;
+    }
+  
+    header .set-logo {
+      display: flex;
+      margin-right: 30px;
+    }
+  
+    header .set-search {
+      display: flex;
+      border: solid #141D23;
+      margin-right: 30px;
+    }
+  
+    header .input-search {
+      background-color: #141D23;
+      color: white;
+      display: flex;
+      border: 0;
+      outline: 0;
+      font-size: 18px;
+      width: 142px;
+    }
+  
+    header .input-search::placeholder {
+      color: white;
+    }
   }
 
-  .img-maior {
-    display: none;
+  @media(min-width: 2046px) {
+
+    .imagem-inicial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .text1{
+        display: flex;
+        margin-top: 50px;
+        font-size: 12px;
+        color: white;
+      }
+  
+    .navbar {
+      display: none;
+    }
+  
+    .img-maior {
+      display: none;
+    }
+  
+    header nav {
+      background-color: #141D23;
+      height: 5rem;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    header nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1em;
+      position: relative;
+      color: white;
+      font-family:sans-serif;
+      font-size: 35px;
+    }
+  
+    header a {
+      text-decoration: none;
+      color: white;
+    }
+  
+    header .set-logo {
+      display: flex;
+      margin-right: 30px;
+    }
+  
+    header .set-search {
+      display: flex;
+      border: solid #141D23;
+      margin-right: 30px;
+    }
+  
+    header .input-search {
+      background-color: #141D23;
+      color: white;
+      display: flex;
+      border: 0;
+      outline: 0;
+      font-size: 20px;
+      width: 160px;
+    }
+  
+    header .input-search::placeholder {
+      color: white;
+    }
+  }
+  
+
+  @media (max-width: 1052px) {
+    .caixa-transparente {
+      width: 100%;
+    }
   }
 
-  header nav {
-    background-color: #141D23;
-    height: 5rem;
-    display: flex;
-    justify-content: space-between;
 
-  }
-
-  header nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-    position: relative;
-    color: white;
-    font-family:sans-serif;
-    font-size: 35px;
-  }
-
-  header a {
-    text-decoration: none;
-    color: white;
-  }
-
-  header .set-logo {
-    display: flex;
-    margin-right: 30px;
-  }
-
-  header .set-search {
-    display: flex;
-    border: solid #141D23;
-    margin-right: 30px;
-  }
-
-  header .input-search {
-    background-color: #141D23;
-    color: white;
-    display: flex;
-    border: 0;
-    outline: 0;
-    font-size: 20px;
-    width: 160px;
-  }
-
-  header .input-search::placeholder {
-    color: white;
-  }
-}
-
-
-
-/*Lançamento-------------------------------------------------------------------------------------------------------
-.destacar {
-  color:yellowgreen;
-  margin-left: 1rem;
-}
-
-.button-lancamento{
-  margin-left: 1rem;
-}
-
-.lancamentos {
-  background: #141D23;
+/* Roberto */
+.secao {
+  display: flex;
+  flex-direction: column;
   border-radius: 10px;
-  color: white;
+  background-color: #202C33;
+  margin: 20px;
 }
 
-.lancamentos h1 {
-  text-align:left;
-  margin: 40px auto;
-  margin-left: 5rem;
-  font-weight: lighter;
-  color:yellowgreen;
-  font-size: 40px;
+/* Roberto */
+.elementos-secao {
+  display: flex;
+  flex-direction: row;
 }
 
-.lancamentos-wrapper {
-  display:flex;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  margin-left: 1rem;
-}
+  Lançamento-------------------------------------------------------------------------------------------------------
 
-@media (min-width: 768px) {
+/* Roberto */
+  .caixa-transparente {
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+
+/* Roberto */
+  .caixa-transparente p {
+    background-color: #9acd32;
+    padding-block: 2rem;
+    margin-inline: 3%;
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+  
+/* Roberto */
+  #titulo-secao{
+    color: #FFFFFF;
+    font-family:sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+  }
+  
+/* Roberto */
+  .caixa-transparente{
+    font-weight: 700;
+    color: #FFFFFF;
+    font-family:sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+  }
+  
+
+/* Roberto */
+ #filmes-em-destaque{
+  
+  position: absolute;
+  width: 90%;
+  margin:20px;  
+  
+
+   font-weight: 700;
+   background-color: #9ACD32;
+    color: #FFFFFF;
+    font-family:sans-serif;
+    font-size: 50px;
+    font-weight: 700;  
+   
+    
+ }
+
+  
+  .destacar {
+    color:yellowgreen;
+    margin-left: 1rem;
+  }
+
+  #button-lancamento{
+    background-color: #cdc5c5;
+    height: 3rem;
+    width: 10rem;
+    margin-block: 10px;
+    border-radius: 15px;
+  }
+  
+  .lancamentos {
+    background: #141D23;
+    border-radius: 10px;
+    color: rgb(248, 248, 248);
+    height: 35rem;
+    width: 65rem;
+    
+    
+  }
+  .container {
+    display: flex;
+    flex-basis: 100%;
+
+    flex-wrap: nowrap; /* permite que as imagens sejam quebradas em várias linhas */
+    justify-content: space-around; /* centraliza as imagens horizontalmente */
+    max-width: 100% /* define uma largura máxima para o contêiner */
+  }
+  
+  .container div {
+    margin: 20px 20px 20px;
+    max-width: 150px; /* garante que as imagens não ultrapassem a largura do contêiner */
+    background-color: #ffffff;
+    margin: 20px;
+
+  }
+
+  .container img{
+    width: 100%;
+  }
+  
+ 
+  @media (max-width: 74rem){
+    #aside-oficial{
+      flex-basis: 100%;
+      width: 0px;
+
+    }
+    .group{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    #area-secao{
+    
+      flex-basis: 100%;
+      width: 100%;
+      float: none;
+  }
+  }
+  @media (max-width: 768px) {
+    .container img {
+      margin-right: 10px; /* reduz a margem à direita das imagens em telas menores */
+      margin-bottom: 10px; /* reduz a margem inferior das imagens em telas menores */
+      
+    }
+  }
+  
+ 
+
+  .container2 {
+    display: flex;
+
+    flex-wrap: nowrap; /* permite que as imagens sejam quebradas em várias linhas */
+    justify-content: space-around; /* centraliza as imagens horizontalmente */
+    max-width: 1000px; /*define uma largura máxima para o contêiner */
+    margin: 100px 30px 30px;
+  }
+  
+
+  
+  .container img:last-child {
+    margin-right: 0; /* remove a margem da última imagem */
+  }
+  
+
+
+  .info-destaque{
+    background-color: aquamarine;
+    margin-right: 20px; /* adiciona uma margem à direita das imagens */
+    margin-bottom: 20px; /* adiciona uma margem inferior às imagens */
+    max-width: 100%; /* garante que as imagens não ultrapassem a largura do contêiner */
+  }
+  
+    
+  
+   
+  .lancamentos h1 {
+    text-align:left;
+    margin: 40px auto;
+    margin-left: 5rem;
+    font-weight: lighter;
+    color:yellowgreen;
+    font-size: 40px;
+  }
+  
   .lancamentos-wrapper {
+    display:flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .lancamentos-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  .lancamentos-poster image{
+    width: 100%;
+    display: block;
+    margin: auto;
+    border: 0px;
+    border-radius: 4px;
+  }
+  
+  .lancamentos-descricao {
     display: flex;
     justify-content: center;
+    align-content: center;
+    justify-self: center;
   }
-}
+  
+  .lancamentos-descricao h2{
+    font-weight: lighter;
+    color: white;
+    font-size: 25px;
+  }
+  
+  .lancamentos-descricao p{
+    font-family:sans-serif;
+    text-align: justify;
+    color: white;
+    font-weight: lighter;
+    font-size: 18px;
+  }
+  .lancamentos-descricao span{
+    color:white;
+  }
+  
+  .descricao-detalhes {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+  }
 
-.lancamentos-poster image{
+  /*--------------------------------*/
+.card-aside {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  position: relative;
   width: 100%;
-  display: block;
-  margin: auto;
-  border: 0px;
-  border-radius: 4px;
+  background: #9ACD32;
+  border-radius: 10px;
+  align-items: center;
+  padding: 20px;
+ }
+
+ .card-aside p {
+  font-size: 1.2rem;
+  position: relative;
+  height: 24px;
+  top: 10px;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 20px;
+  color: #FFFFFF;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
-.lancamentos-descricao {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  justify-self: center;
+.card-aside iframe {
+  position: relative;
+  width: 90%;
+  border-radius: 20px;
+  padding-top: 20px;
 }
 
-.lancamentos-descricao h2{
-  font-weight: lighter;
-  color: white;
-  font-size: 25px;
+#aside-oficial {
+  position: relative;
+  border-width: 2px;
+  width: 30%;
+  background-color: #202C33;
+  float: left;
+  border-radius: 10px;
 }
 
-.lancamentos-descricao p{
-  font-family:sans-serif;
-  text-align: justify;
-  color: white;
-  font-weight: lighter;
-  font-size: 18px;
+#area-secao{
+    position: relative;
+    border-width:2px;
+    width: 70%;
+    /* height: 100px; */
+    left:0px;
+    float: left;
 }
-.lancamentos-descricao span{
-  color:white;
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+.group {
+  
+     zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 }
 
-.descricao-detalhes {
-  width: 85%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.aside-social{
-  display: flex;
-}
-*/
-
+/*--------------------------------*/
+  
+  #botao{
+    background-color: #cdc5c5;
+    height: 3rem;
+    width: 10rem;
+    margin-block: 10px;
+    border-radius: 15px;
+    
+  }
 
 
 /* Destaques ---------------------------------------------------------------------------------------------------------- */
+.destaques h2{
+  font-size: 25px;
+  font-weight: lighter;
+  color: yellowgreen;
+}
 
-/* Em telas com largura máxima de 767px, a section com a classe destaques terá 100% de largura e 30% de altura. 
-Seu conteúdo será exibido em coluna e o título h2 será centralizado. O conteúdo com a classe em-destaques será exibido em coluna 
-e terá suas imagens com tamanho de 280x380 pixels. O conteúdo com a classe info-destaque será exibido em coluna e 
-terá um tamanho de fonte pequeno para os parágrafos e tamanho um pouco maior para o texto destacado.
- */
-
+.info-destaque b{
+  font-family: sans-serif;
+  font-size: 14px;
+  color: white;
+}
+.info-destaque span{
+  font-size: 18px;
+  font-weight: lighter;
+  color: yellowgreen;
+}
 @media (max-width: 767px){
   section.destaques{
     width: 100%;
     height: 30%;
     display: flex;
     margin: auto;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     flex-direction: column;
   }
 
   section.destaques h2{
-    display: flex;
-    align-self: center;
-    font-size: 35px;
-    color: yellowgreen;
-    text-align: center;
+      display: flex;
+      align-self: center;
+      font-size: 30px;
   }
 
   section.destaques div.em-destaques{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin: auto;
   }
 
   section.destaques div.em-destaques div.image-destaque{
@@ -659,155 +896,106 @@ terá um tamanho de fonte pequeno para os parágrafos e tamanho um pouco maior p
   }
 
   section.destaques div.em-destaques div.image-destaque img{
-    width: 280px;
+    width: 250px;
     height: 380px;
   }
 
   section.destaques div.info-destaque{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    font-size: small;
-  }
-
-  .info-destaque p{
-    font-size: 18px;
-    color: white;
-  }
-  .info-destaque span{
-    font-size: 22px;
-    color: yellowgreen;
+      width: 85%;
+      display: flex;
+      flex-direction: column;
+      font-size: small;
   }
 
 }
-
-/* Em telas com largura mínima de 768px e máxima de 1023px, a section com a classe destaques terá 100% de largura e 40% de altura.
- O conteúdo com a classe em-destaques será exibido em coluna e terá suas imagens com tamanho de 350x250 pixels. 
- O conteúdo com a classe info-destaque será exibido em coluna e terá um tamanho de fonte pequeno para os parágrafos e 
- tamanho um pouco maior para o texto destacado.
- */
 
 @media (min-width: 768px) and (max-width: 1023px){
   section.destaques{
     width: 100%;
-    height: 40%;
+    height: 30%;
     display: flex;
     margin: auto;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     flex-direction: column;
   }
 
   section.destaques h2{
-    display: flex;
-    align-self: center;
-    font-size: 33px;
-    color: yellowgreen;
+      display: flex;
+      align-self: center;
+      font-size: 30px;
   }
 
   section.destaques div.em-destaques{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: column;
-    margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin: auto;
   }
-  
-  section.destaques div.em-destaques div.image-destaque{
+
+  section.destaque div.em-destaques div.image-destaque{
     margin-bottom: 5%;
   }
-  
-  section.destaques div.em-destaques div.image-destaque img{
+
+  section.destaque div.em-destaques div.image-destaque img{
     width: 350px;
-    height: 380px;
+    height: 250px;
   }
 
   section.destaques div.info-destaque{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    font-size: small;
-  } 
-
-  .info-destaque p{
-    font-size: 17px;
-    color: white;
-  }
-  
-  .info-destaque span{
-    font-size: 21px;
-    color: yellowgreen;
+      width: 85%;
+      display: flex;
+      flex-direction: column;
+      font-size: small;
   }
 
 }
-
-/* Em telas com largura mínima de 1024px, a section com a classe destaques terá 100% de largura e 40% de altura. 
-O conteúdo com a classe em-destaques será exibido em linha, distribuído igualmente com espaçamento adequado. 
-O tamanho das imagens é mantido como 350x250 pixels. O conteúdo com a classe info-destaque será exibido em coluna e 
-terá um tamanho de fonte pequeno para os parágrafos e tamanho um pouco maior para o texto destacado. */
 
 @media (min-width: 1024px){
   section.destaques{
-    width: 100%;
-    height: 40%;
-    display: flex;
-    margin: auto;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    flex-direction: column;
+      width: 100%;
+      height: 30%;
+      display: flex;
+      margin: auto;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      flex-direction: column;
   }
 
   section.destaques h2{
-    margin-bottom: 2%;
-    font-size: 30px;
-    color: yellowgreen;
-    text-align: center;
+      margin-left: 14%;
+      margin-bottom: 2%;
+      font-size: 30px;
   }
 
   section.destaques div.em-destaques{
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    justify-content: space-evenly;
-    width: 88%;
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+      justify-content: space-evenly;
+      width: 60rem;
   }
 
   section.destaques div.info-destaque{
-    display: flex;
-    flex-direction: column;
+      display: flex;
+      flex-direction: column;
+      
   }
 
-  .info-destaque p{
-    font-size: 16px;
-    color: white;
-  }
-
-  .info-destaque span{
-    font-size: 20px;
-    color: yellowgreen;
-  }
 
 }
 
-/*Formulário---------------------------------------------------------------------------------------------------------------*/
-
-/* Em larguras de tela de até 767 pixels, o elemento .section-form é exibido como uma coluna, com conteúdo centralizado 
-e algum espaçamento nas margens. Os elementos do formulário são estilizados com texto branco em um fundo transparente. 
-O botão enviar tem fundo branco e texto preto. */
+/*Formulario---------------------------------------------------------------------------------------------------------------*/
 
 @media (max-width: 767px){
   .section-form{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     height: 100%;
     margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
     background-color: #141D23;
-    border-radius: 32px;
+    border-radius: 2rem
   }
 
   .section-form h1{
@@ -815,29 +1003,32 @@ O botão enviar tem fundo branco e texto preto. */
     justify-content: center;
     color: yellowgreen;
     font-size: 21px;
-    margin-top: 32px;
+    font-family: sans-serif;
+    margin-top: 2rem;
   }
-
+  
   .section-form form {
     display: block;
     margin: auto;
     height: 100%;
   }
-
+  
   form label {
     display: block;
     padding:5px;
   }
-
+  
   label{
     text-align:left;
     margin-left: 60px;
     margin-top: 10px;
+    font-family: sans-serif;
     font-size: 16px;
     color: yellowgreen;
     display: inline-block;
+    font-weight: lighter;
   }
-
+  
   .input {
     display: inline-block;
     border: 0;
@@ -845,56 +1036,71 @@ O botão enviar tem fundo branco e texto preto. */
     margin: 0px;
     margin-right: 50px;
     background: transparent;
+    font-family: sans-serif;
     font-size: 16px;
     color: white;
   }
 
-  .elenco-textarea{
+  
+  label span{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: yellowgreen;
+  }
+  .check{
+    margin-left: 20px;
+  }
+  
+  
+  #elenco-textarea{
     width: 240px;
     height: 90px;
     resize: none;
     background-color: transparent;
-    border: 1px solid lightblue;
+    color: black;
+    border: 1px solid black;
     outline: none;
     border-radius: 10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    font-family: sans-serif;
     font-size: 16px;
     color: white;
   }
-
+  
   #botao-input{
     display: block;
     margin: auto;
     width:150px;
     height:30px;
+    
     border-radius: 25px ;
     font-size: 18px;
+    font-weight:bold;
     margin-top: 10px;
     background: white;
     color: black;
-    cursor: pointer;
+    font-family: sans-serif;
   }
-
-}
-
-/* Entre 768 e 1023 pixels de largura, o formulário .section ainda é exibido como uma coluna, mas com um tamanho de fonte maior 
-e mais margem. O elemento .section-form h1 também possui um tamanho de fonte maior e uma margem adicional no lado esquerdo. 
-O campo de entrada de texto é mais largo e os elementos do formulário têm um pouco mais de margem. */
-
-@media (min-width: 768px) and (max-width: 1023px){
+  
+  #botao-input:hover{
+    box-shadow: 2px 2px 10px black;
+    cursor: pointer;
+  
+  }
+  }
+  @media (min-width: 768px) and (max-width: 1023px){
   .section-form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
     margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
     background-color: #141D23;
-    border-radius: 32px;
+    border-radius: 2rem
   }
 
   .section-form h1{
@@ -902,30 +1108,33 @@ O campo de entrada de texto é mais largo e os elementos do formulário têm um 
     justify-content: center;
     color: yellowgreen;
     font-size: 30px;
-    margin-top: 32px;
-    margin-left: 32px;
+    font-family: sans-serif;
+    margin-top: 2rem;
+    margin-left: 2rem;
   }
-
+  
   .section-form form {
     display: block;
     margin: auto;
     height: 100%;
   }
-
+  
   form label {
     display: block;
     padding:5px;
   }
-
+  
   label{
     text-align:left;
     margin-left: 60px;
     margin-top: 10px;
+    font-family: sans-serif;
     font-size: 16px;
     color: yellowgreen;
     display: inline-block;
+    font-weight: lighter;
   }
-
+  
   .input {
     display: inline-block;
     border: 0;
@@ -933,113 +1142,152 @@ O campo de entrada de texto é mais largo e os elementos do formulário têm um 
     margin: 0px;
     margin-right: 50px;
     background: transparent;
+    font-family: sans-serif;
     font-size: 16px;
     color: white;
+    font-weight: lighter;
   }
-
-  .elenco-textarea{
+  
+  
+  label span{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: yellowgreen;
+    font-weight: lighter;
+  }
+  .check{
+    margin-left: 20px;
+  }
+  
+  
+  #elenco-textarea{
     width: 300px;
     height: 90px;
     resize: none;
     background-color: transparent;
-    border: 1px solid lightblue;
+    color: black;
+    border: 1px solid black;
     outline: none;
     border-radius: 10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    font-family: sans-serif;
     font-size: 16px;
     color: white;
   }
-
+  
   #botao-input{
     display: block;
     margin: auto;
     width:150px;
     height:30px;
+    
     border-radius: 25px ;
     font-size: 18px;
+    font-weight:bold;
     margin-top: 10px;
     background: white;
     color: black;
+    font-family: sans-serif;
+  }
+  
+  #botao-input:hover{
+    box-shadow: 2px 2px 10px black;
     cursor: pointer;
+  
+  }
   }
 
-}
-
-/* Em larguras de tela maiores que 1024 pixels, o elemento .section-form é exibido como uma linha. 
-O elemento .section-form h1 tem texto centralizado. O formulário é exibido como uma coluna, ocupando metade da largura da tela. 
-Os elementos do rótulo têm mais margem e o campo de entrada não tem margem direita. O elemento .elenco-textarea tem uma largura 
-um pouco maior, e o botão de envio do formulário ainda está centralizado e tem o mesmo estilo dos outros tamanhos de tela. */ 
-
-@media (min-width: 1024px){
+  @media (min-width: 1024px){
+    
   .section-form{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 480px;
+    height: 30rem;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
     background-color: #141D23;
-    border-radius: 32px;
+    border-radius: 2rem
+    
   }
 
   .section-form h1{
     display: flex;
     justify-content: center;
-    text-align: center;
     color: yellowgreen;
     font-size: 30px;
-    margin-top: 32px;
+    font-family: sans-serif;
+    margin-top: 2rem;
   }
-
+  
   .section-form form {
     display: flex;
     flex-direction: column;
     width: 50%;
     height: 100%;
   }
-
+  
   form label {
     display: block;
     padding:5px;
   }
-
+  
   label{
-    text-align:left;
-    margin-left: 100px;
-    margin-top: 13px;
-    font-size: 16px;
-    color: yellowgreen;
-    display: inline-block;
+  text-align:left;
+  margin-left: 100px;
+  margin-top: 13px;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: yellowgreen;
+  display: inline-block;
+  font-weight: lighter;
   }
-
+  
   .input {
     display: inline-block;
     border: 0;
     outline: 0;
     margin: 0px;
     background: transparent;
+    font-family: sans-serif;
     font-size: 16px;
     color: white;
+    font-weight: lighter;
   }
-
-  .elenco-textarea{
+  
+  
+  label span{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: yellowgreen;
+    font-weight: lighter;
+  }
+  .check{
+    margin-left: 20px;
+  }
+  
+  #elenco-textarea{
     width: 464px;
     height: 100px;
     resize: none;
     background-color: transparent;
-    border: 1px solid lightblue;
+    color: black;
+    border: 1px solid black;
     outline: none;
     border-radius: 10px;
     display: block;
     margin-left: 100px;
+    font-family: sans-serif;
     font-size: 16px;
     color: white;
   }
-
+  
   #botao-input{
     display: block;
     margin-left: auto;
@@ -1048,175 +1296,132 @@ um pouco maior, e o botão de envio do formulário ainda está centralizado e te
     height:30px;
     border-radius: 25px ;
     font-size: 18px;
+    font-weight:bold;
     margin-top: 35px;
     background: white;
     color: black;
+    font-family: sans-serif;
+  }
+  
+  #botao-input:hover{
+    box-shadow: 2px 2px 10px black;
     cursor: pointer;
   }
-
-}
-
-/*Ultimas Avaliações----------------------------------------------------------------------------------------------------------*/
-
-/* Em telas com largura máxima de 767px, a classe .avaliacao é definida como um elemento flexível, com o título .avaliacoes h1 
-definido com fonte grande e amarela, alinhada centralmente, com margem superior de 40 pixels. O subtítulo .avaliacao h2 
-e o parágrafo .avaliacao p são definidos com fonte menor e cor branca, justificados e com margem esquerda de 5 pixels, 
-e o span .avaliacao span com uma fonte maior e cor verde-amarela. */ 
-
-@media (max-width:767px){
-  .avaliacoes{
-    background-color:#141D23;
-    border-radius: 32px;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-  .avaliacao {
-    display: flex;
+  
   }
   
-  .avaliacoes h1 {
-    font-size: 35px;
-    text-align: center;
-    margin: 40px auto;
-    color:yellowgreen;
-  }
+/*Ultimas Avaliações*/
+ 
+    .avaliacoes{
+      background-color:#141D23;
+      border-radius: 1rem;
+    }
+    .avaliacoes1 {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin: 0 10px;
+    }
+    
+    .avaliacoes h1 {
+      font-size: 2rem;
+      text-align: center;
+      margin: 40px auto;
+      font-size: 30px;
+      color:yellowgreen;
+    }
   
-  .avaliacao h2 {
-    margin-bottom: 10px;
-    font-size: 25px;
-    color: yellowgreen;
-    margin-left: 5px;
-  }
-  
-  .avaliacao p{
-    font-size: 18px;
-    color: white;
-    text-align: justify;
-    margin-left: 5px;
-  }
-  
-  .avaliacao span{
-    font-size: 22px;
-    color: yellowgreen;
-  }
-
-}
-  
-/* Em telas com largura mínima de 768px e máxima de 1023px, o estilo é semelhante ao primeiro bloco, mas com fontes menores 
-e subtítulo .avaliacao h2 em uma fonte ainda menor. */
-
 @media (min-width: 768px) and (max-width:1023px) {
+  
   .avaliacoes{
     background-color:#141D23;
-    border-radius: 32px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  
-  .avaliacao {
-    display: flex;
-  }
-    
-  .avaliacoes h1 {
-    font-size: 21px;
-    text-align: center;
-    margin: 40px auto;
-    color:yellowgreen;
-  }
-    
-  .avaliacao h2 {
-    margin-bottom: 10px;
-    font-size: 20px;
-    color: yellowgreen;
-    margin-left: 5px;
-  }
-    
-  .avaliacao p{
-    font-size: 17px;
-    color: white;
-    text-align: justify;
-    margin-left: 5px;
-  }
-    
-  .avaliacao span{
-    font-size: 21px;
-    color: yellowgreen;    
+    border-radius: 1rem;
   }
 
+  .avaliacoes1{
+    flex-direction: row;
+  }
 }
 
-/* Em telas com largura mínima de 1024px, o estilo é diferente, com a seção de avaliações dividida em duas colunas usando 
-a classe .avaliacoes1, separadas por uma margem de 20 pixels. Os outros elementos são semelhantes ao segundo bloco, 
-com fontes menores e subtítulo .avaliacao h2 em uma fonte ainda menor. A borda tem um raio menor, de 30 pixels. */
+.avaliacao {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+
+.avaliacao h2 {
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: yellowgreen;
+}
+
+.avaliacao p{
+  font-size: 18px;
+  font-family: sans-serif;
+  color: white;
+  text-align: justify;
+}
+
+.avaliacao span{
+  font-size: 18px;
+  font-weight: lighter;
+  color: yellowgreen;
+}
 
 @media (min-width: 1024px){
   .avaliacoes{
     background-color:#141D23;
-    border-radius: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
+    border-radius: 1rem;
   }
 
-  .avaliacoes1 {
-    display: flex;
-    gap: 20px;
-    margin: 0 10px;
+  .avaliacoes1{
+    flex-direction: row;
   }
-  
-  .avaliacao {
-    display: flex;
-  }
-  
-  .avaliacoes h1 {
-    font-size: 30px;
-    text-align: center;
-    margin: 40px auto;
-    color:yellowgreen;
-  }
-  
-  .avaliacao h2 {
-    margin-bottom: 10px;
-    font-size: 20px;
-    color: yellowgreen;
-    margin-left: 5px;
-  }
-  
-  .avaliacao p{
-    font-size: 16px;
-    color: white;
-    text-align: justify;
-    margin-left: 5px;
-  }
-  
-  .avaliacao span{
-    font-size: 18px;
-    color: yellowgreen;
-  }
-
 }
 
-/*Novidades-----------------------------------------------------------------------------------------------------------------*/
+.avaliacao {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
 
-/* Em telas com largura máxima de 767px. Nesse caso, a seção de novidades é exibida em colunas, com uma altura fixa de 1280 pixels.
- Cada "novidade" é exibida como um bloco com altura de 110 pixels, e uma imagem centralizada. O título e texto da novidade 
- são exibidos em um artigo abaixo da imagem, com fontes menores. Há um botão de estilo, com borda, largura e altura definidas, 
- e posicionado na parte inferior da novidade. */
+.avaliacao h2 {
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: yellowgreen;
+}
+
+.avaliacao p{
+  font-size: 18px;
+  font-family: sans-serif;
+  color: white;
+  text-align: justify;
+}
+
+.avaliacao span{
+  font-size: 18px;
+  font-weight: lighter;
+  color: yellowgreen;
+}
+
+
+
+/*Novidades-----------------------------------------------------------------------------------------------------------------*/
 
 @media (max-width: 767px){
   .section-novidades{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 1280px;
+    height: 80rem;
   }
-
+  
   .h2-novidades{
     margin-left: 15px;
     color: yellowgreen;
     font-size: 30px;
+    font-weight:lighter ;
   }
-
+  
+  
   .section-novidades .div-novidades{
     display: flex;
     flex-direction: column;
@@ -1226,14 +1431,14 @@ com fontes menores e subtítulo .avaliacao h2 em uma fonte ainda menor. A borda 
     height: 100%;
     margin-top: 15px;
   }
-
+  
   .div-novidades .novidade{
     display: block;
     margin-top: 10px;
     margin-bottom: 130px;
     margin-left: 1px;
     width: 100% ;
-    height: 110px;
+    height: 7rem;
   }
 
   .novidade img{
@@ -1245,53 +1450,75 @@ com fontes menores e subtítulo .avaliacao h2 em uma fonte ainda menor. A borda 
     margin-top: auto;
     margin-left: 10px;
   }
-
+  
   .article-novidades p{
-    color: white;
-    font-size: 12px;
-    text-align: justify;
+     color: white;
+     font-size: 12px;
+     text-align: justify;
+     font-weight: lighter;
+     font-family:sans-serif;
   }
-
+  
   .article-novidades h4{
     color: yellowgreen;
     font-size: 15px;
     text-align: justify;
+    font-weight: lighter;
+  }
+   
+  hr{
+    margin-left: 10px;
   }
   
   .button-novidades{
     display: inline-block;
-    border: 2px solid black;
+    border: 2xs solid black;
     width: 80px;
     height: 25px;
     border-radius: 20px;
     align-items: flex-end;
     margin-top: 5px;
-    cursor: pointer;
   }
-
+  
+  .button-novidades1{
+    display: inline-block;
+    border: 2xs solid black;
+    width: 50px;
+    height: 25px;
+    border-radius: 20px;
+    align-items: flex-end;
+  }
+  
+  .button-novidades:hover{
+    box-shadow: 2px 2px 10px black;
+      cursor: pointer;
+  }
+  
+  .button-novidades1:hover{
+    box-shadow: 2px 2px 10px black;
+      cursor: pointer;
+  }
+  
+  
 }
-
-/* Em telas com largura mínima de 768px e máxima de 1023px. Nesse caso, a seção de novidades continua sendo exibida em colunas,
- com uma altura fixa de 1440 pixels. Cada "novidade" é exibida como um bloco flexível com altura de 112 pixels 
- e uma imagem alinhada à esquerda. O título e texto da novidade são exibidos em um artigo ao lado da imagem, com fontes maiores.  
- O botão de estilo é o mesmo. */
-
 @media (min-width: 768px) and (max-width: 1023px){
   .section-novidades{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 1440px;
+    height: 90rem;
     margin: auto;
   }
-
+  
   .h2-novidades{
     margin-top: 15px;
     margin-left: 15px;
     color: yellowgreen;
     font-size: 30px;
+    font-weight:lighter ;
   }
-
+  
+  
   .section-novidades .div-novidades{
     display: flex;
     flex-direction: column;
@@ -1299,67 +1526,90 @@ com fontes menores e subtítulo .avaliacao h2 em uma fonte ainda menor. A borda 
     margin-bottom: auto;
     width: 98%;
     height: 100%;
-  }
 
+  }
+  
   .div-novidades .novidade{
     display: flex;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 10px;
     width: 100% ;
-    height: 112px;
+    height: 7rem;
   }
-
+  
   .article-novidades{
     margin-left: 10px;
-    width: 100%;
   }
-
+  
   .article-novidades p{
-    color: white;
-    font-size: 15px;
-    text-align: justify;
+     color: white;
+     font-size: 15px;
+     text-align: justify;
+     font-weight: lighter;
+     font-family: sans-serif;
   }
-
+  
   .article-novidades h4{
     color: yellowgreen;
     font-size: 18px;
     text-align: justify;
+    font-weight: lighter;
   }
-
+  
+  
+  hr{
+    margin-left: 10px;
+  }
+  
   .button-novidades{
     display: inline-block;
-    border: 2px solid black;
+    border: 2xs solid black;
     width: 80px;
     height: 25px;
     border-radius: 20px;
     align-items: flex-end;
     margin-top: 5px;
-    cursor: pointer;
   }
-
+  
+  .button-novidades1{
+    display: inline-block;
+    border: 2xs solid black;
+    width: 50px;
+    height: 25px;
+    border-radius: 20px;
+    align-items: flex-end;
+  }
+  
+  .button-novidades:hover{
+    box-shadow: 2px 2px 10px black;
+      cursor: pointer;
+  }
+  
+  .button-novidades1:hover{
+    box-shadow: 2px 2px 10px black;
+      cursor: pointer;
+  }
+  
+  
 }
-
-/* Em telas com largura mínima de 1024px. Nesse caso, a seção de novidades é exibida em duas colunas,e cada coluna ocupa 
-50% da largura total da tela. Com altura fixa de 640 pixels. Cada "novidade" é exibida como um bloco flexível com altura 
-de 112 pixels e uma imagem alinhada à esquerda. O título e texto da novidade são exibidos em um artigo ao lado da imagem, 
-com fontes maiores.  O botão de estilo é o mesmo.  */
-
 @media (min-width: 1024px){
   .section-novidades{
     display: flex;
-    width: 100%;
-    height: 640px;
+    /*width: 70rem;*/
+    height: 40rem;
     margin: auto;
   }
-
+  
   .h2-novidades{
     margin-top: 15px;
     margin-left: 15px;
     color: yellowgreen;
     font-size: 30px;
+    font-weight:lighter ;
   }
-
+  
+  
   .section-novidades .div-novidades{
     display: flex;
     flex-direction: column;
@@ -1369,127 +1619,157 @@ com fontes maiores.  O botão de estilo é o mesmo.  */
     height: 100%;
     margin-top: 15px;
   }
-
+  
   .div-novidades .novidade{
     display: flex;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 10px;
     width: 100% ;
-    height: 112px;
+    height: 7rem;
   }
-
+  
   .article-novidades{
     margin-left: 10px;
   }
-
+  
   .article-novidades p{
-    color: white;
-    font-size: 15px;
-    text-align: justify;
+     color: white;
+     font-size: 15px;
+     text-align: justify;
+     font-weight: lighter;
+     font-family: sans-serif;
   }
-
+  
   .article-novidades h4{
     color:  yellowgreen;
     font-size: 18px;
     text-align: justify;
+    font-weight: lighter;
   }
-
+  
+  hr{
+    margin-left: 10px;
+  }
+  
   .button-novidades{
     display: inline-block;
-    border: 2px solid black;
+    border: 2xs solid black;
     width: 80px;
     height: 25px;
     border-radius: 20px;
     align-items: flex-end;
     margin-top: 5px;
-    cursor: pointer;
   }
-
+  
+  .button-novidades1{
+    display: inline-block;
+    border: 2xs solid black;
+    width: 50px;
+    height: 25px;
+    border-radius: 20px;
+    align-items: flex-end;
+  }
+  
+  .button-novidades:hover{
+    box-shadow: 2px 2px 10px black;
+      cursor: pointer;
+  }
+  
+  .button-novidades1:hover{
+    box-shadow: 2px 2px 10px black;
+      cursor: pointer;
+  }
+ 
 }
 
-/*Sobre/Editorial/Redes Sociais-------------------------------------------------------------------------------------------*/
-
-/* Em telas com largura máxima de 767 pixels. Ela define que a largura da seção será de 90% da largura da janela do navegador, 
-com altura de 480 pixels, e será centralizada com margem automática. um layout de coluna para os elementos dentro da seção. 
-As cores de fundo e texto são definidas para a seção e seus elementos internos. Há também algumas regras para ajustar o tamanho 
-e o espaçamento dos elementos dentro da seção.  */
+/*Sobre/Editorial-------------------------------------------------------------------------------------------------------------*/
 
 @media(max-width: 767px){
   aside.sobre{
     width: 90%;
-    height: 480px;
+    height: 30rem;
     margin: auto;
     display: flex;
     flex-direction: column;
     padding: 2%;
     background: #141D23;
-    border-radius: 16px;
-    margin-bottom: 20px;
-  }
-
-  aside.sobre p{
-    margin-bottom: 2%;
-    font-size: 80%;
-    text-align: justify;
-    color: white;
-  }
-
-  aside.sobre div.aside-sobre{
-    margin-bottom: 3%;
-  }
-
-  aside.sobre div.aside-redes{
-    width: 40%;
-  }
-
-  .aside-sobre h3{
-    color: yellowgreen;
-    font-size: 20px;
-  }
-
-  .div-editorial p {
-    color: white;
-    font-size: small;
-  }
-
-  .div-editorial span{
-    color: yellowgreen;
-  }
-
-  h4{
-    color: yellowgreen;
-    font-size: 20px;
-  }
-
-  div.aside-sobre div.div-editorial img.icone{
-    width: 2.5%;
-    margin-right: 2%;
-  }
+    border-radius: 1rem;
 
 }
 
-/* Em telas com largura mínima de 768 pixels e máxima de 1023 pixels. Nessa faixa de largura, as regras são semelhantes ao 
-primeiro bloco. A largura e altura da seção são as mesmas, mas as fontes dos textos são aumentadas. 
-Além disso, a largura da imagem dentro da seção é ligeiramente maior. */
+aside.sobre p{
+  margin-bottom: 2%;
+  font-size: 80%;
+  text-align: justify;
+  font-family: sans-serif;
+  color: white;
+}
 
+aside.sobre div.aside-sobre{
+  margin-bottom: 3%;
+}
+
+aside.sobre div.aside-redes{
+  width: 40%;
+}
+
+.aside-sobre h3{
+  color: yellowgreen;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.div-editorial h3{
+  color: yellowgreen;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.div-editorial p {
+  color: white;
+  font-size: small;
+  font-weight: lighter;
+  font-family:sans-serif;
+}
+
+.div-editorial span{
+  color: yellowgreen;
+  font-weight: lighter;
+}
+
+h4{
+  color: yellowgreen;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+div.aside-sobre div.div-editorial img.icone{
+  width: 2.5%;
+  margin-right: 2%;
+}
+
+}
+
+  
 @media (min-width: 768px) and (max-width: 1023px){
+
   aside.sobre{
-    width: 90%;
-    height: 480px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    padding: 2%;
-    background: #141D23;
-    border-radius: 16px;
-    margin-bottom: 20px;
+      width: 90%;
+      height: 30rem;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      padding: 2%;
+      background: #141D23;
+      border-radius: 1rem;
   }
 
   aside.sobre p{
     margin-bottom: 2%;
     font-size: 15px;
     text-align: justify;
+    font-family: sans-serif;
     color: white;
   }
 
@@ -1504,19 +1784,30 @@ Além disso, a largura da imagem dentro da seção é ligeiramente maior. */
   .aside-sobre h3{
     color: yellowgreen;
     font-size: 30px;
+    font-weight: lighter;
+  }
+
+  .div-editorial h3{
+    color: yellowgreen;
+    font-size: 30px;
+    font-weight: lighter;
   }
 
   .div-editorial p {
     color: white;
     font-size: 10px;
+    font-weight: lighter;
+    font-family: sans-serif;
   }
 
   .div-editorial span{
     color: yellowgreen;
+    font-weight: lighter;
   }
 
   h4{
     color: yellowgreen;
+    font-weight: lighter;
     font-size: 30px;
   }
 
@@ -1526,28 +1817,26 @@ Além disso, a largura da imagem dentro da seção é ligeiramente maior. */
   }
 
 }
-
-/* Em telas com largura mínima de 1024 pixels. Nessa faixa de largura, a seção "sobre" é mais estreita, 
-com largura de 45% da janela do navegador, e é deslocada para a direita com margem esquerda de 30 pixels. 
-As outras regras de estilo são semelhantes ao segundo bloco. */
 
 @media (min-width: 1024px){
+
   aside.sobre{
-    width: 45%;
-    height: 480px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    padding: 1%;
-    background: #141D23;
-    border-radius: 16px;
-    margin-left: 30px;
+      width: 45%;
+      height: 30rem;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      padding: 1%;
+      background: #141D23;
+      border-radius: 1rem;
+      margin-left: 2rem;
   }
 
   aside.sobre p{
     margin-bottom: 2%;
     font-size: 15px;
     text-align: justify;
+    font-family: sans-serif;
     color: white;
   }
 
@@ -1562,19 +1851,30 @@ As outras regras de estilo são semelhantes ao segundo bloco. */
   .aside-sobre h3{
     color: yellowgreen;
     font-size: 30px;
+    font-weight: lighter;
+  }
+
+  .div-editorial h3{
+    color: yellowgreen;
+    font-size: 30px;
+    font-weight: lighter;
   }
 
   .div-editorial p {
     color: white;
     font-size: 10px;
+    font-weight: lighter;
+    font-family: sans-serif;
   }
 
   .div-editorial span{
     color:yellowgreen;
+    font-weight: lighter;
   }
 
   h4{
     color: yellowgreen;
+    font-weight: lighter;
     font-size: 30px;
   }
 
@@ -1585,13 +1885,8 @@ As outras regras de estilo são semelhantes ao segundo bloco. */
 
 }
 
-/* Propagandas--------------------------------------------------------------------------------------------------------------- */
 
-/* Em telas com largura máxima de 767 pixels. Nesse caso, a seção "propagandas" tem uma largura de 90% e uma altura de 
-50% em relação à tela. A seção é centralizada na tela e possui um layout de coluna. Algumas classes dentro da seção também 
-são estilizadas, como "prop-laterais", "h1", "div.filmes-oscar", "article.top3-filmes" e "span". Além disso, há uma regra 
-que oculta imagens com a classe "anuncio-retrato" dentro do elemento "aside.prop-laterais". */
-
+/* Propagandas------------------------------------------------------------------------------------------------------- */
 @media (max-width: 767px){
   section.propagandas{
     width: 90%;
@@ -1599,10 +1894,11 @@ que oculta imagens com a classe "anuncio-retrato" dentro do elemento "aside.prop
     margin: auto;
     display: flex;
     flex-direction: column;
+    
   }
 
   section.propagandas aside.prop-laterais img.anuncio-retrato{
-    display: none;
+      display: none;
   }
 
   section.propagandas aside.prop-laterais{
@@ -1612,44 +1908,48 @@ que oculta imagens com a classe "anuncio-retrato" dentro do elemento "aside.prop
     justify-content: center;
   }
 
-  section.propagandas h1{
-    text-align: center;
+  section.propagandas div.filmes-oscar{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: yellowgreen;
+      margin: 2%;
   }
 
-  section.propagandas div.filmes-oscar{
+  div.filmes-oscar article.filmes-oscar{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    color: yellowgreen;
-    margin: 2%;
+    margin-top: 10%;
+  
   }
 
   section.propagandas article.top3-filmes {
-    display: flex;
-    width: 95%;
-    height: 20%;
-    margin: auto;
-    border: 1px lightblue solid;
-    border-radius: 10px;
-    flex-direction: column;
-    padding: 2%;
-    margin-bottom: 1%;
-    font-size: 80%;
-    color: white;
-    text-align: justify;
+      display: flex;
+      width: 95%;
+      height: 20%;
+      margin: auto;
+      border: 1px #1A8CD8  solid;
+      border-radius: 10px;
+      flex-direction: column;
+      padding: 2%;
+      margin-bottom: 1%;
+      font-size: 80%;
+      color: white;
+      font-weight: lighter;
+      font-family: sans-serif;
   }
 
   section.propagandas article.top3-filmes span{
     display: inline-flex;
-    color: yellowgreen;
+    font-weight: lighter;
+      color: yellowgreen;
     font-size: 23px;
   }
 
+  article.top3-filmes{
+    width: 5%;
+  }
 }
-
-/* Em telas com largura mínima de 768 pixels e máxima de 1023 pixels. Os estilos são semelhantes ao primeiro bloco, 
-com algumas alterações. As imagens com a classe "anuncio-retrato" continuam ocultas. A largura do título "h1" 
-é aumentada para 110%. */
 
 @media (min-width: 768px) and (max-width: 1023px){
   section.propagandas{
@@ -1658,10 +1958,11 @@ com algumas alterações. As imagens com a classe "anuncio-retrato" continuam oc
     margin: auto;
     display: flex;
     flex-direction: column;
+    
   }
 
   section.propagandas aside.prop-laterais img.anuncio-retrato{
-    display: none;
+      display: none;
   }
 
   section.propagandas aside.prop-laterais{
@@ -1671,45 +1972,47 @@ com algumas alterações. As imagens com a classe "anuncio-retrato" continuam oc
     justify-content: center;
   }
 
-  section.propagandas h1{
-    text-align: center;
+  section.propagandas div.filmes-oscar{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: yellowgreen;
+      margin: 2%;
   }
 
-  section.propagandas div.filmes-oscar{
+  div.filmes-oscar article.filmes-oscar{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    color: yellowgreen;
-    margin: 2%;
   }
 
   section.propagandas article.top3-filmes {
-    display: flex;
-    width: 95%;
-    height: 20%;
-    margin: auto;
-    border: 1px lightblue solid;
-    border-radius: 10px;
-    flex-direction: column;
-    padding: 2%;
-    margin-bottom: 1%;
-    font-size: 80%;
-    color: white;
-    text-align: justify;
+      display: flex;
+      width: 95%;
+      height: 20%;
+      margin: auto;
+      border: 1px #1A8CD8  solid;
+      border-radius: 10px;
+      flex-direction: column;
+      padding: 2%;
+      margin-bottom: 1%;
+      font-size: 60%;
+      color: white;
+      font-weight: lighter;
+      font-family:sans-serif;
   }
 
   section.propagandas article.top3-filmes span{
     display: inline-flex;
+    font-weight: lighter;
     color: yellowgreen;
     font-size: 23px;
   }
 
+  article.top3-filmes{
+    width: 5%;
+  }
 }
 
-/* Em telas com largura mínima de 1024 pixels. Nesse caso, a seção "propagandas" tem um layout de linha, 
-com os elementos alinhados verticalmente. A imagem com a classe "anuncio-retrato" tem um tamanho específico definido. 
-As imagens com a classe "anuncio-paisagem" são ocultadas. O título "h1" tem sua largura aumentada para 110%.
- */
 
 @media (min-width: 1024px){
   section.propagandas{
@@ -1719,104 +2022,132 @@ As imagens com a classe "anuncio-paisagem" são ocultadas. O título "h1" tem su
     display: flex;
     flex-direction: row;
     align-items: center;
+    
+  }
+
+  section.propagandas aside.prop-laterais img.anuncio-retrato{
+      width: 290px;
+      height: 400px;
+
   }
 
   section.propagandas aside.prop-laterais img.anuncio-paisagem{
     display: none;
   }
 
-  section.propagandas h1{
-    text-align: center;
-    width: 110%;
+  section.propagandas div.filmes-oscar{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 2%;
+      color: yellowgreen;
   }
 
-  section.propagandas div.filmes-oscar{
+  div.filmes-oscar article.filmes-oscar{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 2%;
-    color: yellowgreen;
+    
   }
 
   section.propagandas article.top3-filmes {
-    display: flex;
-    width: 95%;
-    margin: auto;
-    border: 1px lightblue solid;
-    border-radius: 10px;
-    flex-direction: column;
-    padding: 2%;
-    margin-bottom: 1%;
-    color: white;
-    text-align: justify;
+      display: flex;
+      width: 95%;
+      margin: auto;
+      border: 1px #1A8CD8  solid;
+      border-radius: 10px;
+      flex-direction: column;
+      padding: 2%;
+      margin-bottom: 1%;
+      color: white;
+      font-weight: lighter;
+      font-family: sans-serif;
   }
 
   section.propagandas article.top3-filmes span{
     display: inline-flex;
+    font-weight: lighter;
     color: yellowgreen;
     font-size: 23px;
   }
 
+  article.top3-filmes{
+    width: 5%;
+  }
 }
 
-/* Rodapé-------------------------------------------------------------------------------------------------------------------- */
+section {
+  margin: 20px 0;
+}
 
-/* Em telas com largura máxima de 767 pixels. Onde o rodapé tem fundo cinza escuro e altura de 64 pixels. 
-A classe ".rodape" é configurada para ser exibida com flexbox centralizado, com um espaçamento de margem superior de 20 pixels, 
-texto branco e tamanho de fonte de 24 pixels. */
+
+  /* Footer-------------------------------------------------------------------------------------------------------------------- */
 
 @media(max-width: 767px){
-  footer{
-    background-color:#141D23;
-    height: 64px;
- }
- 
- .rodape{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    color:white;
-    font-size: 20px;
-    text-align: center;
- }
-
-}
-
-/* Em telas com largura mínima de 768 pixels e máxima de 1023 pixels. Onde o rodapé tem fundo cinza escuro e altura de 60 pixels. 
-A classe ".rodape" é configurada da mesma forma que na primeira regra, mas com um espaçamento de margem superior de 15 pixels 
-e um tamanho de fonte maior de 30 pixels. */
-
-@media(min-width: 768px) and (max-width: 1023px){
-  footer{
-    background-color:#141D23;
-    height: 60px;
- }
- 
- .rodape{
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-    color: white;
-    font-size: 30px;
- }
- 
-}
-
-/* Em telas com largura mínima de 1024 pixels. Onde o rodapé tem fundo cinza escuro e altura de 70 pixels. 
-A classe ".rodape" é configurada da mesma forma que nas outras regras, mas com um tamanho de fonte ainda maior de 35 pixels. */
-
-@media(min-width:1024px){
-  footer{
-    background-color:#141D23;
-    height: 70px;
- }
- 
- .rodape{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    color:white;
-    font-size: 35px;
- }
-
-}
+    footer{
+      background-color:#141D23;
+       height: 4rem;
+       display: flex;
+       justify-content: space-between;
+       
+   }
+   
+   .rodape{
+       display: flex;
+       align-items: center;
+       margin-left: 25px;
+       color:white;
+       font-weight: lighter;
+       font-size: 20px;
+   }
+   
+   .logo-rodape {
+     display: flex;
+     margin-right: 25px;
+   }
+  }
+  @media(min-width: 768px) and (max-width: 1023px){
+    footer{
+      background-color:#141D23;
+       height: 4rem;
+       display: flex;
+       justify-content: space-between;
+       
+   }
+   
+   .rodape{
+       display: flex;
+       align-items: center;
+       margin-left: 25px;
+       color: white;
+       font-weight: lighter;
+       font-size: 30px;
+   }
+   
+   .logo-rodape {
+     display: flex;
+     margin-right: 25px;
+   }
+  }
+  @media(min-width:1024px){
+    footer{
+      background-color:#141D23;
+       height: 5rem;
+       display: flex;
+       justify-content: space-between;
+       
+   }
+   
+   .rodape{
+       display: flex;
+       align-items: center;
+       margin-left: 50px;
+       color:white;
+       font-weight: lighter;
+       font-size: 30px;
+   }
+   
+   .logo-rodape {
+     display: flex;
+     margin-right: 50px;
+   }
+  }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,332 +8,343 @@
     <title>Cinema</title>
 </head>
 <body>
-    <header>
-        <!--Logo, nome e descrição do cinema   Roberto -->
-        <nav>
-            <div class="set-logo">
-                <img src="midia/Logo.jpg" width="80px" height="80px" alt="Logo Marvel vs DC" class="img-menor">
-                <img src="midia/Logo.jpg " width="200px" height="200px"  alt="Logo Marvel vs DC" class="img-maior">
-            </div>
-            <div>
-                <p class="nome-cinema">TecWeb Cinema</p>
-                <p class="descricao-cinema">Bem-vindo ao nosso site de cinema! Aqui você encontrará <br> tudo o que precisa saber 
-                sobre os filmes em exibição atualmente, bem como notícias, críticas, trailers e muito mais.</p>
-            </div>
-            <div>
-                <button >EN</button>
-                <button >FR</button>
-                <button >DE</button>
-                <button >BR</button>
-            </div>
-            <p class="text1">How it works  &#8739 Edraw max &#8739 Edraw mind map</p>
-        </nav>
-        <nav> 
-            <!--Barra de Navegação-->
-            <div class="navbar">
-                <!--Barra de Navegação quando estiver com menos de  XX px-->
-                <div class="container nav-container">
-                    <input class="checkbox" type="checkbox" name="" id="" />
-                    
-                    <div class="Cinema-lines">
-                        <span class="line line1"></span>
-                        <span class="line line2"></span>
-                        <span class="line line3"></span>
-                    </div>
-                
-                    <div class="menu-items">
-                        <li><a href="#início">Início</a></li>
-                        <li><a href="#produtos">Produtos</a></li>
-                        <li><a href="#emDestaque">Em Destaque</a></li>
-                        <li><a href="#compre-agora">Compre seu ingresso</a></li>
-                        <li><a href="#suporte">Suporte</a></li>
-                        <li><a href="#sobrenos">Sobre nós</a></li>
-                        <li>
-                            <input type="text" placeholder="Pesquisar filme..." class="menu-search">
-                        </li>
-                    </div>
-                </div>
-            </div>
 
-            <!--Barra de Navegação quando estiver com mais de  XX px-->
-            <nav class="nav">
-                <a href="#início">Início</a> &#8739
-                <a href="#produtos">Produtos</a> &#8739
-                <a href="#emDestaque">Em Destaque</a> &#8739
-                <a href="#compre agora">Compre seu ingresso</a> &#8739
-                <a href="#suporte">Suporte</a> &#8739
-                <a href="#sobre-nós">Sobre nós</a> 
+    <!-- Div responsável por controlar a tag 'header'-->
+    <div class="barra-superior"> 
+        <header> <!-- Tela superior com Menu e Carrossel de Filmes -->
+            <nav>
+                <div class="set-logo">
+                    <img src="images/Logo.jpg" width="80px" height="80px" alt="Logo Marvel vs DC" class="img-menor">
+                    <img src="images/Logo.jpg " width="200px" height="200px"  alt="Logo Marvel vs DC" class="img-maior">
+                </div>
+                <div>
+                    <p class="nome-cinema">TecWeb Cinema</p>
+                    <p class="descricao-cinema">Bem-vindo ao nosso site de cinema! Aqui você encontrará <br> tudo o que precisa saber 
+                    sobre os filmes em exibição atualmente, bem como notícias, críticas, trailers e muito mais.</p>
+                </div>
+                <div>
+                    <button >EN</button>
+                    <button >FR</button>
+                    <button >DE</button>
+                    <button >BR</button>
+                </div>
+                <p class="text1">How it works  &#8739 Edraw max &#8739 Edraw mind map</p>
             </nav>
-            <div class="set-search">
-                <input type="text" placeholder="Pesquisar filme..." class="input-search">
-            </div>
-
-        </nav>
-        <div class="imagem-inicial">
-            <img src="midia/imagem1.jpg" width="75%"alt="">
-        </div>
-    </header>
-
-
-
-
-    <!-- Top History Headline - Lançamento Roberto 
-    <section class="lancamentos" id="inicio">
-        <h1 class="destacar">Lançamento</h1>
-        <div class="lancamentos-wrapper">
-            <div class="lancamentos-poster">
-                <img src="midia/super mario.jpg" width="280" height="300" alt="Super mario Bros">
-            </div>
-            <div class="lancamento-descricao">
-                <h2 class="destacar">Super Mario Bros - O Filme</h2>
-                <br>
-                <p><span class="destacar" >Sinopse:</span> Após se encontrar no Reino dos Cogumelos e seu irmão ser raptado pelo Rei dos Koopas, Mario embarca em uma viagem para salvar todo o reino e Luigi. Ele ainda estará companhado de Toad, Princesa Peach e Donkey Kong. </p>
-                <br>
-                <div class="descricao-detalhes">
-                    <p><span class="destacar">Diretor:</span> Aaron Horvath, Michael Jelenic </p>
-                    <p><span class="destacar">Roteiro:</span> Matthew Fogel </p>
-                    <p><span class="destacar">Estreia:</span> 2023 </p>
+            <nav> 
+                <!--Barra de Navegação-->
+                <div class="navbar">
+                    <!--Barra de Navegação quando estiver com menos de  XX px-->
+                    <div class="container nav-container">
+                        <input class="checkbox" type="checkbox" name="" id="" />
+                        
+                        <div class="Cinema-lines">
+                            <p class="line line1"></p>
+                            <p class="line line2"></p>
+                            <p class="line line3"></p>
+                        </div>
+                    
+                        <div class="menu-items">
+                            <li><a href="#início">Início</a></li>
+                            <li><a href="#produtos">Produtos</a></li>
+                            <li><a href="#emDestaque">Em Destaque</a></li>
+                            <li><a href="#compre-agora">Compre seu ingresso</a></li>
+                            <li><a href="#suporte">Suporte</a></li>
+                            <li><a href="#sobrenos">Sobre nós</a></li>
+                            <li>
+                                <input type="text" placeholder="Pesquisar filme..." class="menu-search">
+                            </li>
+                        </div>
+                    </div>
                 </div>
-                <br>
-                <p><span class="destacar">Elenco:</span> Raphael Rossatto, Chris Pratt, Carina Eiras </p>
-                <br>
-                <button class="button-lançamento">Comprar ingresso</button>
+    
+                <!--Barra de Navegação quando estiver com mais de  XX px-->
+                <nav class="nav">
+                    <a href="#início">Início</a> &#8739
+                    <a href="#produtos">Produtos</a> &#8739
+                    <a href="#emDestaque">Em Destaque</a> &#8739
+                    <a href="#compre agora">Compre seu ingresso</a> &#8739
+                    <a href="#suporte">Suporte</a> &#8739
+                    <a href="#sobre-nós">Sobre nós</a> 
+                </nav>
+                <div class="set-search">
+                    <input type="text" placeholder="Pesquisar filme..." class="input-search">
+                </div>
+    
+            </nav>
+            <div class="imagem-inicial">
+                <img src="midia/imagem1.jpg" width="75%"alt="">
             </div>
-        </div>
-
- Newsletter/Produtos 
-<section class="Newsletter" id="início">
-
-    <div class="newsletter-TecWeb">
-        <div class="image-newsletter">
-            <img src="" alt="Ingressos Corporativos">
-        </div>
-        <div class="image-newsletter">
-            <img src="" alt="Alugueis de salas">
-        </div>
-        <div class="image-newsletter">
-            <img src="" alt="Cinema 24 horas">
-        </div>
-        <div class="image-newsletter">
-            <img src="" alt="Festa no cinema">
-        </div>
+        </header>
     </div>
-    review de usuarios
-</section>
+<div class="group">
+    <!-- Div responsável por controlar os elementos de tag 'sections'-->
+    <div id="area-secao">
+        <!-- Filme Selecionado -->
+        <section class="secao">
+            <!-- Título -->
+            <div class="caixa-transparente">
+                <p>Top History Headline</p>
+            </div>
 
+            <!-- Imagem e Desrição -->
+            <div class="elementos-secao">
+                <!-- Imagem -->
+                <div class="lancamentos-poster">
+                    <img src="images/super mario.jpg" width="280" height="300" alt="Super mario Bros">
+                </div>
+                <!-- Descrição -->
+                <div class="lancamento-descricao">
+                    <h2 class="destacar">Super Mario Bros - O Filme</h2>
+                    <br>
+                    <p><p class="destacar" >Sinopse:</p> Após se encontrar no Reino dos Cogumelos e seu irmão ser raptado pelo Rei dos Koopas, Mario embarca em uma viagem para salvar todo o reino e Luigi. Ele ainda estará companhado de Toad, Princesa Peach e Donkey Kong. </p>
+                    <br>
+                    <div class="descricao-detalhes">
+                        <p><p class="destacar">Diretor:</p> Aaron Horvath, Michael Jelenic </p>
+                        <p><p class="destacar">Roteiro:</p> Matthew Fogel </p>
+                        <p><p class="destacar">Estreia:</p> 2023 </p>
+                    </div>
+                    <br>
+                    <p><p class="destacar">Elenco:</p> Raphael Rossatto, Chris Pratt, Carina Eiras </p>
+                    <br>
+                </div>
+            </div>
 
-    </section>
+            <!-- Botão para comprar ingresso-->
+            <div>
+                <button id="button-lancamento">Comprar ingresso</button>
+            </div>
+        </section>
 
-    Social
-    <aside class="aside-social">
-        <h1 class="social">Social</h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/CWEBTCVFHto" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <button>Compartilhar & Links</button>
+        <!-- Newsletter -->
+        <section class="secao" id="início"> <!--class="newsletter"-->
+            <!-- Título da section -->
+        <div class="caixa-transparente">
+            <p id="titulo-secao">Newsletter</p>
+            </div>
+                <div  class="container">
+                    <div>
+                        <img src="images\icons\ticket.png" alt="Ingressos Corporativos">
+                    </div>
+
+                    <div>
+                        <img  src="images\icons\room-cine.png" alt="Aluguéis de salas">
+                    </div>
+
+                    <div>
+                        <img  src="images\icons\cine.png" alt="Cinema 24 horas">
+                    </div>
+
+                    <div>
+                        <img  src="images\icons\popcorn.png" alt="Festa no cinema">
+                    </div>
+                </div>
+        </section>
+
+        <!--Em destaques -->
+        <section class="secao" id="destaques"> <!--class="destaques"-->
+            <h2 id="filmes-em-destaque">Filmes em Destaque</h2>
+            <div class="container2">
+
+                <div class="image-destaque">
+                    <img  width="280" height="380" src="images/destaque1.jpg" alt="A Baleia ">
+                    <div class="info-destaque">
+                        <p>Filme: A Baleia</p> 
+                        <p>Diretor: Darren Aronofsk</p> 
+                        <p>Roteiro: Samuel D. Hunter</p>
+                        <p>Estreia: 2023</p>
+                    </div>
+                </div>
+
+                <div class="image-destaque">
+                    <img width="280" height="380" src="images/destaque2.jpg" alt="Jhon Wick 4: Baba Yaga">
+                    <div class="info-destaque">
+                        <p>Filme: Jhon Wick 4: Baba Yaga</p>
+                        <p>Diretor: Chad Stahelski</p> 
+                        <p>Roteiro: Michael Finch, Shay Hatten</p>
+                        <p>Estreia: 2023</p> 
+                    </div>
+                </div>
+                
+                <div class="image-destaque">
+                    <img width="280" height="380" src="images/destaque3.jpg" alt="AIR: A História Por Trás do Logo">
+                    <div class="info-destaque">
+                        <p>Filme: AIR: A História Por Trás do Logo</p>
+                        <p>Diretor: Ben Affleck</p>
+                        <p>Roteiro: Alex Convery</p>
+                        <p>Estreia: 2023</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div>
+
+            <!-- Ultimas Avaliacoes -->
+            <section class="avaliacoes" id="avaliacoes">
+                <h1 class="destacar">Últimas Avaliações</h1>
+                <div class="avaliacoes1">
+                    <div class="avaliacao">
+                        <div class="foto-usuario">
+                            <img src="images/usuario-avaliação.jpg" width="60px" height="60px" alt="">
+                        </div>
+                        <div>
+                            <h2>Fer     nando</h2>
+                            <p><p clas="destacar">Avaliação:</p> Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et</p>
+                            <p><p>&#9733;&#9733;&#9733;&#9733;&#9733; 13/02/2023</p>
+                        </div>
+        
+                    </div>
+        
+                    <div class="avaliacao">
+                        <div class="foto-usuario">
+                            <img src="images/usuario-avaliação.jpg" width="60px" height="60px" alt="">
+                        </div>
+                        <div>
+                            <h2>José</h2>
+                            <p><p class="destacar">Avaliação:</p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et</p>
+                            <p><p>&#9733;&#9733;&#9733;&#9734;&#9734; 28/01/2023</p>
+                        </div>
+                    </div>
+        
+                    <div class="avaliacao">
+                        <div class="foto-usuario">
+                            <img src="images/usuario-avaliação.jpg" width="60px" height="60px" alt="">
+                        </div>
+                        <div>
+                            <h2>Paulo</h2>
+                            <p><p class="destacar">Avaliação:</p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et</p>
+                            <p><p> &#9733;&#9733;&#9734;&#9734;&#9734; 01/04/2023</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <!--Novidades e Sobre -->
+            <section class="section-novidades" id="novidade">
+                <div class="div-novidades">
+                    <h2 class="h2-novidades">Novidades</h2>
+                    <div class="novidade">
+                        <img src="images/novidades1.jpg" width="200px" height="120px" alt="Super Mário Bros">
+                            <article class="article-novidades">
+                                <h4>Filme Super Mario Bros supera bilheterias de Sonic e Mortal Kombat</h4>
+                                <p>Longa-metragem da Nintendo recém-estreante nos cinemas, 
+                                    estabeleceu uma série de registros importantes em seu primeiro final de semana.</p>
+                                <button class="button-novidades">Filmes</button>
+                                <button class="button-novidades1">Jogos</button>
+                                <button class="button-novidades">Nintendo</button>
+                            </article>
+                    </div>
+                    <hr>
+                    <div class="novidade">
+                        <img src="images/novidades2.jpg" width="200px" height="120px" alt="Marvel e DC juntas">
+                        <article class="article-novidades">
+                            <h4>Marvel e DC juntas: discussões sobre crossover já estão acontecendo</h4>
+                            <p>James Gunn, um dos atuais chefes da DC Entertainment, 
+                                revelou que um crossover entre Marvel e DC é uma possibilidade.</p>
+                            <button class="button-novidades">Marvel</button>
+                            <button class="button-novidades1">DC</button>
+                            <button class="button-novidades">Filmes</button>    
+                        </article>
+                    </div>
+                    <hr>
+                    <div class="novidade" >
+                        <img src="images/novidades3.jpg" width="200px" height="120px" alt="Street Fighter">
+                        <article class="article-novidades">
+                            <h4>Street Fighter: Capcom e Legendary trabalham em filme live-action</h4>
+                            <p>A Capcom anunciou, que está trabalhando em um novo filme live-action de Street Fighter.
+                            </p>
+                            <button class="button-novidades">Jogos</button>
+                            <button class="button-novidades1">Filmes</button>
+                            <button class="button-novidades">Ação</button>
+                        </article>
+                    </div>
+                </div>
+                </aside>
+                <!--Sobre/Editorial/Redes Sociais-->
+                <aside class="sobre">
+                    <div class="aside-sobre">
+                        <h3>Sobre</h3>
+                        <p>Nós somos um cinema moderno e confortável, localizado em um dos melhores pontos da cidade. Com nossas salas de cinema de alta tecnologia, 
+                            oferecemos aos nossos clientes uma experiência de cinema imersiva e única.Temos um amplo catálogo de filmes, desde os mais recentes lançamentos 
+                            até os clássicos do cinema. Além disso, exibimos diversos gêneros de filmes, desde comédias românticas até filmes de ação e aventura.Nossa equipe 
+                            de atendimento é altamente treinada e dedicada a fornecer um excelente serviço aos nossos clientes. Agradecemos por escolher o nosso cinema como 
+                            sua opção de entretenimento e esperamos recebê-lo em breve!</p>
+                        <div class="div-editorial">
+                            <h3>Editorial</h3>
+                            <p><img src="images/user-solid-100px-branco.png" alt="" class="icone"><p>Redação:</p> Bruno</p>
+                            <p><img src="images/user-solid-100px-branco.png" alt="" class="icone"><p>Pesquisa:</p>  João</p>
+                            <p><img src="images/user-solid-100px-branco.png" alt="" class="icone"><p>Gerente Geral:</p> Maria</p>
+                        </div>
+                    </div>
+                    <div class="aside-redes">
+                        <h4>Redes sociais:</h4>
+        
+                        <img src="images/facebook.png" width="30px" height="30px" alt="Facebook">
+                        <img src="images/Twitter.png" width="30px" height="30px" alt="Twitter">
+                        <img src="images/Instagram.png" width="30px" height="30px" alt="Instagram">
+        
+                    </div>
+                </aside>
+            </section>
+        
+            <!--Propagandas/Top 3 filmes--> 
+            <section class="propagandas">
+        
+                <aside class="prop-laterais">
+                    <img src="images/propaganda 1.jpg" width="290px" height="340px" alt="" class="anuncio-retrato">
+                    <img src="images/propaganda 2.jpg" width="250px" height="170px" alt="" class="anuncio-paisagem">
+                </aside>
+        
+                <div class="filmes-oscar">
+                    <h1>TOP 3 FILMES GANHADORES DO OSCAR</h1>
+                    <article class="top3-filmes"><p>O Senhor dos Anéis: O Retorno do Rei</p>Sauron planeja um grande ataque a Minas Tirith, capital de Gondor, o que faz com que Gandalf e Pippin partam para o local na intenção de ajudar a resistência. Um exército é reunido por Theoden em Rohan, em mais uma tentativa de deter as forças de Sauron. Enquanto isso Frodo , Sam  e Gollum seguem sua viagem rumo à Montanha da Perdição, para destruir o Um Anel. 11 premiações.</article>
+        
+                    <article class="top3-filmes"><p>Titanic</p>Um artista pobre e uma jovem rica se conhecem e se apaixonam na fatídica jornada do Titanic, em 1912. Embora esteja noiva do arrogante herdeiro de uma siderúrgica, a jovem desafia sua família e amigos em busca do verdadeiro amor. 11 Premiações.</article>
+        
+                    <article class="top3-filmes"><p>Ben-Hur</p>Em Jerusalém, no início do século I, vive Judah Ben-Hur , um rico mercador judeu. Mas, com o retorno de Messala, um amigo da juventude que agora é o chefe das legiões romanas na cidade, um desentendimento devido a visões políticas divergentes faz com que Messala condene Ben-Hur a viver como escravo em uma galera romana, mesmo sabendo da inocência do ex-amigo. Mas o destino vai dar a Ben-Hur uma oportunidade de vingança que ninguém poderia imaginar. 11 premiações.</article>
+                </div>
+        
+                <!-- <aside class="prop-laterais">
+                    <img src="midia/propaganda 3.jpg" width="290px" height="340px" alt="" class="anuncio-retrato">
+                    <img src="midia/propaganda 4.jpg" width="250px" height="170px" alt="" class="anuncio-paisagem">
+                </aside> -->
+            </section> 
+        
+            </div>
+</div>
+
+    <!-- Div responsável por controlar os elementos da tag 'aside'-->
+    <aside id="aside-oficial">
+        <!-- Trailer do Filme -->
+        <div class="card-aside">
+            <p>Social</p>
+            <iframe src="https://www.youtube.com/embed/CWEBTCVFHto" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <button id="botao">Compartilhar</button>
+        </div>
+        <!-- Navegação -->
+        <div class="card-aside">
+            <p>Navegar</p>
+            <ul id="itens">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+        </div>
+        <div class="card-aside" style="display: flex; flex-direction: column"></div><!--<aside class="card-aside">prop-laterais-->
+            <img src="images/propaganda 3.jpg" width="290px" height="340px" alt="" class="anuncio-retrato">
+            <img src="images/propaganda 4.jpg" width="250px" height="170px" alt="" class="anuncio-paisagem">
+        </div>
     </aside>
-
-    Navigate
-    <aside class="aside-navigate">
-        <h1 class="navigate">Navegar</h1>
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-        </ul>
-    </aside>
--->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--Leandro-->
-
-    <!--Em destaques-->
-    <section class="destaques" id="destaques">
-        <h2>Filmes em Destaque</h2>
-        <div class="em-destaques">
-            <div class="image-destaque">
-                <img width="280" height="380" src="midia/destaque1.jpg" alt="A Baleia ">
-                <div class="info-destaque">
-                    <p><span>Filme:</span> A Baleia </p>
-                    <p><span>Diretor:</span> Darren Aronofsk</p>
-                    <p><span>Roteiro:</span> Samuel D. Hunter </p>
-                    <p><span>Estreia:</span> 2023</p>
-                </div>
-            </div>
-            <div class="image-destaque">
-                <img width="280" height="380" src="midia/destaque2.jpg" alt="Jhon Wick 4: Baba Yaga">
-                <div class="info-destaque">
-                    <p><span>Filme:</span> Jhon Wick 4: Baba Yaga</p>
-                    <p><span>Diretor:</span> Chad Stahelski</p>
-                    <p><span>Roteiro:</span> Michael Finch, Shay Hatten</p>
-                    <p><span>Estreia:</span> 2023</p>
-                </div>
-            </div>
-            <div class="image-destaque">
-                <img width="280" height="380" src="midia/destaque3.jpg" alt="AIR: A História Por Trás do Logo">
-                <div class="info-destaque">
-                    <p><span>Filme:</span> AIR: A História Por Trás do Logo </p>
-                    <p><span>Diretor:</span> Ben Affleck</p>
-                    <p><span>Roteiro:</span> Alex Convery</p>
-                    <p><span>Estreia:</span> 2023</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--Formulário-->
-    <section class="section-form">
-        <form action="" method="post">
-            <h1>Formulário de Cadastro no Sistema</h1>
-            <label for="nome-input">Nome:<input type="text" id="nome-input" class="input" autocomplete="off"> </label>
-            <label for="cpf-input">CPF:<input type="text" id="cpf-input" class="input" autocomplete="off"> </label>
-            <label for="cep-input">CEP:<input type="text" id="cep-input" class="input" autocomplete="off"> </label>
-            <label for="email-input">Email:<input type="text" id="email-input" class="input" autocomplete="off"> </label>
-            <label for="elenco-textarea">Sugestões de Filmes:</label>
-            <textarea class="elenco-textarea" rows="50" cols="100"></textarea>
-            <input type="submit" value="Enviar" id="botao-input">
-        </form>
-    </section> 
-
-    <!-- Ultimas Avaliacoes -->
-    <section class="avaliacoes" id="avaliacoes">
-        <h1 class="destacar">Últimas Avaliações</h1>
-        <div class="avaliacoes1">
-            <div class="avaliacao">
-                <div class="foto-usuario">
-                    <img src="midia/usuario-avaliação.jpg" width="60px" height="60px" alt="">
-                </div>
-                <div>
-                    <h2>Fernando</h2>
-                    <p><span clas="destacar">Avaliação:</span> Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et</p>
-                    <p><span>&#9733;&#9733;&#9733;&#9733;&#9733; 13/02/2023</p>
-                </div>
-            </div>
-            <div class="avaliacao">
-                <div class="foto-usuario">
-                    <img src="midia/usuario-avaliação.jpg" width="60px" height="60px" alt="">
-                </div>
-                <div>
-                    <h2>José</h2>
-                    <p><span class="destacar">Avaliação:</span>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et</p>
-                    <p><span>&#9733;&#9733;&#9733;&#9734;&#9734; 28/01/2023</p>
-                </div>
-            </div>
-            <div class="avaliacao">
-                <div class="foto-usuario">
-                    <img src="midia/usuario-avaliação.jpg" width="60px" height="60px" alt="">
-                </div>
-                <div>
-                    <h2>Paulo</h2>
-                    <p><span class="destacar">Avaliação:</span>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et</p>
-                    <p><span> &#9733;&#9733;&#9734;&#9734;&#9734; 01/04/2023</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--Novidades -->
-    <section class="section-novidades" id="novidade">
-        <div class="div-novidades">
-            <h2 class="h2-novidades">Novidades</h2>
-            <div class="novidade">
-                <img src="midia/novidades1.jpg" width="200px" height="120px" alt="Super Mário Bros">
-                    <article class="article-novidades">
-                        <h4>Filme Super Mario Bros supera bilheterias de Sonic e Mortal Kombat</h4>
-                        <p>Longa-metragem da Nintendo recém-estreante nos cinemas, 
-                            estabeleceu uma série de registros importantes.</p>
-                        <button class="button-novidades">Filmes</button>
-                        <button class="button-novidades">Jogos</button>
-                        <button class="button-novidades">Nintendo</button>
-                    </article>
-            </div>
-            <hr>
-            <div class="novidade">
-                <img src="midia/novidades2.jpg" width="200px" height="120px" alt="Marvel e DC juntas">
-                <article class="article-novidades">
-                    <h4>Marvel e DC juntas: discussões sobre crossover já estão acontecendo</h4>
-                    <p>James Gunn, um dos atuais chefes da DC Entertainment, 
-                        revelou que um crossover entre Marvel e DC é uma possibilidade.</p>
-                    <button class="button-novidades">Marvel</button>
-                    <button class="button-novidades">DC</button>
-                    <button class="button-novidades">Filmes</button>    
-                </article>
-            </div>
-            <hr>
-            <div class="novidade" >
-                <img src="midia/novidades3.jpg" width="200px" height="120px" alt="Street Fighter">
-                <article class="article-novidades">
-                    <h4>Street Fighter: Capcom e Legendary trabalham em filme live-action</h4>
-                    <p>A Capcom anunciou, que está trabalhando em um novo filme live-action de Street Fighter.
-                    </p>
-                    <button class="button-novidades">Jogos</button>
-                    <button class="button-novidades">Filmes</button>
-                    <button class="button-novidades">Ação</button>
-                </article>
-            </div>
-        </div>
-        </aside>
-
-        <!--Sobre/Editorial/Redes Sociais-->
-        <aside class="sobre">
-            <div class="aside-sobre">
-                <h3>Sobre</h3>
-                <p>Nós somos um cinema moderno e confortável, localizado em um dos melhores pontos da cidade. Com nossas salas de cinema de alta tecnologia, 
-                    oferecemos aos nossos clientes uma experiência de cinema imersiva e única. Temos um amplo catálogo de filmes, desde os mais recentes lançamentos 
-                    até os clássicos do cinema. Além disso, exibimos diversos gêneros de filmes, desde comédias românticas até filmes de ação e aventura. Nossa equipe 
-                    de atendimento é altamente treinada e dedicada a fornecer um excelente serviço aos nossos clientes. Agradecemos por escolher o nosso cinema como 
-                    sua opção de entretenimento e esperamos recebê-lo em breve!</p>
-                <div class="div-editorial">
-                    <h3>Editorial</h3>
-                    <p><img src="midia/user-solid-100px-branco.png" alt="icone" class="icone"><span>Redação:</span> Bruno</p>
-                    <p><img src="midia/user-solid-100px-branco.png" alt="icone" class="icone"><span>Pesquisa:</span> João</p>
-                    <p><img src="midia/user-solid-100px-branco.png" alt="icone" class="icone"><span>Gerente Geral:</span> Maria</p>
-                </div>
-            </div>
-            <div class="aside-redes">
-                <h4>Redes sociais:</h4>
-                <img src="midia/facebook.png" width="30px" height="30px" alt="Facebook">
-                <img src="midia/Twitter.png" width="30px" height="30px" alt="Twitter">
-                <img src="midia/Instagram.png" width="30px" height="30px" alt="Instagram">
-            </div>
-        </aside>
-    </section>
-
-    <!--Propagandas/Top 3 filmes--> 
-    <section class="propagandas">
-        <aside class="prop-laterais">
-            <img src="midia/propaganda 1.jpg" width="290px" height="340px" alt="" class="anuncio-retrato">
-            <img src="midia/propaganda 2.jpg" width="250px" height="170px" alt="" class="anuncio-paisagem">
-        </aside>
-        <div class="filmes-oscar">
-            <h1>TOP 3 FILMES GANHADORES DO OSCAR</h1>
-            <article class="top3-filmes"><span>O Senhor dos Anéis: O Retorno do Rei</span>Sauron planeja um grande ataque a Minas Tirith, capital de Gondor, o que faz com que Gandalf e Pippin partam para o local na intenção de ajudar a resistência. Um exército é reunido por Theoden em Rohan, em mais uma tentativa de deter as forças de Sauron. Enquanto isso Frodo , Sam  e Gollum seguem sua viagem rumo à Montanha da Perdição, para destruir o Um Anel. 11 premiações.</article>
-            <article class="top3-filmes"><span>Titanic</span>Um artista pobre e uma jovem rica se conhecem e se apaixonam na fatídica jornada do Titanic, em 1912. Embora esteja noiva do arrogante herdeiro de uma siderúrgica, a jovem desafia sua família e amigos em busca do verdadeiro amor. 11 Premiações.</article>
-            <article class="top3-filmes"><span>Ben-Hur</span>Em Jerusalém, no início do século I, vive Judah Ben-Hur , um rico mercador judeu. Mas, com o retorno de Messala, um amigo da juventude que agora é o chefe das legiões romanas na cidade, um desentendimento devido a visões políticas divergentes faz com que Messala condene Ben-Hur a viver como escravo em uma galera romana, mesmo sabendo da inocência do ex-amigo. Mas o destino vai dar a Ben-Hur uma oportunidade de vingança que ninguém poderia imaginar. 11 premiações.</article>
-        </div>
-        <aside class="prop-laterais">
-            <img src="midia/propaganda 3.jpg" width="290px" height="340px" alt="" class="anuncio-retrato">
-            <img src="midia/propaganda 4.jpg" width="250px" height="170px" alt="" class="anuncio-paisagem">
-        </aside>
-    </section> 
-
-    <!--Rodapé-->
+    
+</div>
     <footer>
-        <div class="rodape">Copyright 2023 - Disciplina Tec Web</div>
+        <div class="rodape">
+            Copyright 2023 - Disciplina Tec Web
+        </div>
+        <div class="logo-rodape">
+            <img src="images/Logo.jpg" alt="Logo">
+        </div>
     </footer>
 
 </body>
