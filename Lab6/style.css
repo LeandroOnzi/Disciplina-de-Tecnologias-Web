@@ -1,0 +1,538 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+  }
+  
+  body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:#363636;
+  }
+
+
+
+/* Leandro */
+
+/* Destaques */
+.Titulo1{
+  align-self: center;
+  text-align: center;
+  margin-top: 10px;
+  color: yellowgreen;
+}
+
+.card{
+  background-color:#363636;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.card-body{
+  color: white;
+}
+
+/* Formulario */
+.Titulo2{
+  align-self: center;
+  text-align: center;
+  margin-top: 10px;
+  color:yellowgreen;
+}
+
+.mb-3{
+  color: white;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.form-label{
+  color: yellowgreen;
+}
+
+.section-form{
+  border-radius: 10px;
+  background-color: #141D23;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Ultimas Avaliações */
+
+.Titulo3{
+  align-self: center;
+  text-align: center;
+  margin-top: 10px;
+  color:yellowgreen;
+}
+
+.notas{
+  color: yellowgreen;
+}
+
+.card-title{
+  color: yellowgreen;
+}
+
+/* Novidades */
+
+
+ @media (max-width: 767px){
+  .section-novidades{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1280px;
+  }
+
+  .h2-novidades{
+    margin-left: 15px;
+    color: yellowgreen;
+    font-size: 30px;
+  }
+
+  .section-novidades .div-novidades{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 98%;
+    height: 100%;
+    margin-top: 15px;
+  }
+
+  .div-novidades .novidade{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 130px;
+    margin-left: 1px;
+    width: 100% ;
+    height: 110px;
+  }
+
+  .novidade img{
+    display: block;
+    margin: auto;
+  }
+
+  .article-novidades{
+    margin-top: auto;
+    margin-left: 10px;
+  }
+
+  .article-novidades p{
+    color: white;
+    font-size: 12px;
+    text-align: justify;
+  }
+
+  .article-novidades h4{
+    color: yellowgreen;
+    font-size: 15px;
+    text-align: justify;
+  }
+  
+  .button-novidades{
+    display: inline-block;
+    border: 2px solid black;
+    width: 80px;
+    height: 25px;
+    border-radius: 20px;
+    align-items: flex-end;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+  .section-novidades{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1440px;
+    margin: auto;
+  }
+
+  .h2-novidades{
+    margin-top: 15px;
+    margin-left: 15px;
+    color: yellowgreen;
+    font-size: 30px;
+  }
+
+  .section-novidades .div-novidades{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 98%;
+    height: 100%;
+  }
+
+  .div-novidades .novidade{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    width: 100% ;
+    height: 112px;
+  }
+
+  .article-novidades{
+    margin-left: 10px;
+    width: 100%;
+  }
+
+  .article-novidades p{
+    color: white;
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .article-novidades h4{
+    color: yellowgreen;
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .button-novidades{
+    display: inline-block;
+    border: 2px solid black;
+    width: 80px;
+    height: 25px;
+    border-radius: 20px;
+    align-items: flex-end;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+}
+
+
+@media (min-width: 1024px){
+  .section-novidades{
+    display: flex;
+    width: 100%;
+    height: 640px;
+    margin: auto;
+  }
+
+  .h2-novidades{
+    margin-top: 15px;
+    margin-left: 15px;
+    color: yellowgreen;
+    font-size: 30px;
+  }
+
+  .section-novidades .div-novidades{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 50%;
+    height: 100%;
+    margin-top: 15px;
+  }
+
+  .div-novidades .novidade{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    width: 100% ;
+    height: 112px;
+  }
+
+  .article-novidades{
+    margin-left: 10px;
+  }
+
+  .article-novidades p{
+    color: white;
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .article-novidades h4{
+    color:  yellowgreen;
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .button-novidades{
+    display: inline-block;
+    border: 2px solid black;
+    width: 80px;
+    height: 25px;
+    border-radius: 20px;
+    align-items: flex-end;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+}
+
+/* Sobre/Editorial/Redes Sociais */
+
+@media(max-width: 767px){
+  aside.sobre{
+    width: 90%;
+    height: 480px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    background: #141D23;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  aside.sobre p{
+    margin-bottom: 2%;
+    font-size: 80%;
+    text-align: justify;
+    color: white;
+  }
+
+  aside.sobre div.aside-sobre{
+    margin-bottom: 3%;
+  }
+
+  aside.sobre div.aside-redes{
+    width: 40%;
+  }
+
+  .aside-sobre h3{
+    color: yellowgreen;
+    font-size: 20px;
+  }
+
+  .div-editorial p {
+    color: white;
+    font-size: small;
+  }
+
+  .div-editorial span{
+    color: yellowgreen;
+  }
+
+  h4{
+    color: yellowgreen;
+    font-size: 20px;
+  }
+
+  div.aside-sobre div.div-editorial img.icone{
+    width: 2.5%;
+    margin-right: 2%;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+  aside.sobre{
+    width: 90%;
+    height: 480px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    background: #141D23;
+    border-radius: 16px;
+    margin-bottom: 20px;
+  }
+
+  aside.sobre p{
+    margin-bottom: 2%;
+    font-size: 15px;
+    text-align: justify;
+    color: white;
+  }
+
+  aside.sobre div.aside-sobre{
+    margin-bottom: 3%;
+  }
+
+  aside.sobre div.aside-redes{
+    width: 40%;
+  }
+
+  .aside-sobre h3{
+    color: yellowgreen;
+    font-size: 30px;
+  }
+
+  .div-editorial p {
+    color: white;
+    font-size: 10px;
+  }
+
+  .div-editorial span{
+    color: yellowgreen;
+  }
+
+  h4{
+    color: yellowgreen;
+    font-size: 30px;
+  }
+
+  div.aside-sobre div.div-editorial img.icone{
+    width: 2.5%;
+    margin-right: 2%;
+  }
+
+}
+
+@media (min-width: 1024px){
+  aside.sobre{
+    width: 45%;
+    height: 480px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    background: #141D23;
+    border-radius: 16px;
+    margin-left: 30px;
+  }
+
+  aside.sobre p{
+    margin-bottom: 2%;
+    font-size: 15px;
+    text-align: justify;
+    color: white;
+  }
+
+  aside.sobre div.aside-sobre{
+    margin-bottom: 3%;
+  }
+
+  aside.sobre div.aside-redes{
+    width: 40%;
+  }
+
+  .aside-sobre h3{
+    color: yellowgreen;
+    font-size: 30px;
+  }
+
+  .div-editorial p {
+    color: white;
+    font-size: 10px;
+  }
+
+  .div-editorial span{
+    color:yellowgreen;
+  }
+
+  h4{
+    color: yellowgreen;
+    font-size: 30px;
+  }
+
+  div.aside-sobre div.div-editorial img.icone{
+    width: 2%;
+    margin-right: 2%;
+  }
+
+}
+
+/* Propagandas */
+
+.card-text4{
+  text-align: justify;
+}
+
+@media (max-width: 767px){
+
+
+  section.propagandas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .Titulo4{
+    text-align: center;
+    color: yellowgreen;
+    margin-top: 60px;
+  }
+
+  .card-propaganda1{
+    display: grid;
+  }
+
+  section.propagandas aside.prop-laterais img.anuncio-retrato{
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+
+    section.propagandas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .Titulo4{
+    text-align: center;
+    color: yellowgreen;
+    margin-top: 25px;
+  }
+
+  .card-propaganda1{
+    display: grid;
+  }
+
+  section.propagandas aside.prop-laterais img.anuncio-retrato{
+    display: none;
+  }
+}
+
+
+@media (min-width: 1024px){
+  section.propagandas{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .Titulo4{
+    text-align: center;
+    color: yellowgreen;
+    margin-top: 30px;
+  }
+
+  .card-propaganda1{
+    display: grid;
+  }
+
+  section.propagandas aside.prop-laterais img.anuncio-paisagem{
+    display: none;
+  }
+
+  }
+
+/* Rodapé */
+
+.rodapé{
+  background-color: #141D23;
+  margin-top: 10px;
+}
+
+.text-center{
+  color: white;
+}
