@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Laboratorio 10</title>
+</head>
+    <!--O Resultados são exibdos no console do navegador -->
+<body>
+    <h1>Consulta de API</h1>
+
+    <h2>Buscar informações (GET)</h2>
+    <button onclick="buscarInformacoes()">Buscar</button>
+
+    <h2>Postar informações (POST)</h2>
+    <button onclick="postarInformacoes()">Postar</button>
+
+    <h2>Atualizar informações (PUT)</h2>
+    <button onclick="atualizarInformacoes()">Atualizar</button>
+
+    <h2>Deletar informações (DELETE)</h2>
+    <button onclick="deletarInformacoes()">Deletar</button>
+
+    <script>
+        function buscarInformacoes() {
+            var request = new XMLHttpRequest();
+            request.open('GET', 'https://reqres.in/api/users', true);
+
+            request.onload = function() {
+                if (request.status >= 200 && request.status < 400) {
+                    var data = JSON.parse(request.responseText);
+                    console.log('Informações dos usuários:');
+                    console.log(data);
+                } else {
+                    console.error('Erro ao buscar informações:', request.status);
+                }
+            };
+
+            request.onerror = function() {
+                console.error('Erro de conexão');
+            };
+
+            request.send();
+        }
+
+        function postarInformacoes() {
+            var user = {
+                id:'7',
+                name: 'Fulano'
+                
+            };
+
+            var request = new XMLHttpRequest();
+            request.open('POST', 'https://reqres.in/api/users', true);
+            request.setRequestHeader('Content-Type', 'application/json');
+
+            request.onload = function() {
+                if (request.status >= 200 && request.status < 400) {
+                    var data = JSON.parse(request.responseText);
+                    console.log('Novo usuário criado:');
+                    console.log(data);
+                } else {
+                    console.error('Erro ao postar informações:', request.status);
+                }
+            };
+
+            request.onerror = function() {
+                console.error('Erro de conexão');
+            };
+
+            request.send(JSON.stringify(user));
+        }
+
+        function atualizarInformacoes() {
+            var user = {
+                id:'8',
+                name: 'Fulano 2',
+                
+            };
+
+            var request = new XMLHttpRequest();
+            request.open('PUT', 'https://reqres.in/api/users/2', true);
+            request.setRequestHeader('Content-Type', 'application/json');
+
+            request.onload = function() {
+                if (request.status >= 200 && request.status < 400) {
+                    var data = JSON.parse(request.responseText);
+                    console.log('Usuário atualizado:');
+                    console.log(data);
+                } else {
+                    console.error('Erro ao atualizar informações:', request.status);
+                }
+            };
+
+            request.onerror = function() {
+                console.error('Erro de conexão');
+            };
+
+            request.send(JSON.stringify(user));
+        }
+
+        function deletarInformacoes() {
+            var request = new XMLHttpRequest();
+            request.open('DELETE', 'https://reqres.in/api/users/2', true);
+
+            request.onload = function() {
+                if (request.status === 204) {
+                    console.log('Usuário excluído com sucesso');
+                } else {
+                    console.error('Erro ao excluir usuário:', request.status);
+                }
+            };
+
+            request.onerror = function() {
+                console.error('Erro de conexão');
+            };
+
+            request.send();
+        }
+    </script>
+</body>
+
+</html>
+
+  
